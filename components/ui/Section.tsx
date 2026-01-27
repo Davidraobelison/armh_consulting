@@ -31,7 +31,7 @@ export default function Section({
     >
       {/* Overlay optionnel */}
       {backgroundImage && overlay && (
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/35" />
       )}
 
       {/* Contenu */}

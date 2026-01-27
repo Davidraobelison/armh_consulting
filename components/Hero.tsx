@@ -2,7 +2,7 @@ import Image from "next/image";
 
 type HeroProps = {
   title: string;
-  subtitle?: string;
+  subtitle?: React.ReactNode;
   backgroundImage: string;
 };
 
