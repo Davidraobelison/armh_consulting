@@ -17,11 +17,11 @@ export default function Navbar() {
 
  const navigation = [
   { name: "Accueil", href: "/" },
-  { name: "Projets", href: "/projets" },
-  { name: "Partenariats", href: "/partenariats" },
-  { name: "Durabilité", href: "/durabilite" },
+  { name: "Projets", href: "/discographie" },
+  { name: "Partenariats", href: "/nos-services" },
+  { name: "Durabilité", href: "/j" },
   { name: "À propos", href: "/a-propos" },
-  { name: "Actualités", href: "/actualites" },
+  { name: "Actualités", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 
