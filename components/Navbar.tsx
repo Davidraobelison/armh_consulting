@@ -15,14 +15,15 @@ export default function Navbar() {
   const MotionLink = motion(Link);
   const pathname = usePathname();
 
-  const navigation = [
-    { name: "Accueil", href: "/" },
-    { name: "À propos", href: "/a-propos" },
-    { name: "Services", href: "/nos-services" },
-    { name: "Réalisations", href: "/discographie" },
-    // { name: "Actualités", href: "/actuality" },
-    { name: "Contact", href: "/contact" },
-  ];
+ const navigation = [
+  { name: "Accueil", href: "/" },
+  { name: "Projets", href: "/projets" },
+  { name: "Partenariats", href: "/partenariats" },
+  { name: "Durabilité", href: "/durabilite" },
+  { name: "À propos", href: "/a-propos" },
+  { name: "Actualités", href: "/actualites" },
+  { name: "Contact", href: "/contact" },
+];
 
   return (
     <Disclosure as="nav" className="absolute top-0 left-0 w-full z-50 bg-transparent">
