@@ -20,18 +20,18 @@ export function generateSeoMetadata({
     ? `${title} | ${SITE_NAME}`
     : SITE_NAME;
 
-  const canonicalUrl = `${BASE_URL}${path}`;
+  const canonical = `${BASE_URL}${path}`;
 
   return {
     title: fullTitle,
     description,
     alternates: {
-      canonical: canonicalUrl,
+      canonical: canonical,
     },
     openGraph: {
       title: fullTitle,
       description,
-      url: canonicalUrl,
+      url: canonical,
       siteName: SITE_NAME,
       images: [
         {
