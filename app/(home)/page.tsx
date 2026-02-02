@@ -4,6 +4,7 @@ import Container from "@/components/ui/Container";
 import ButtonCTA from "@/components/ui/ButtonCTA";
 import ProjectCard from "@/components/projects/ProjectCard";
 import { projectsPreview } from "@/data/projectsPreview";
+import { PartenariatSection } from "./_components/PartenerSections";
 
 export default function Home() {
   return (
@@ -188,7 +189,7 @@ export default function Home() {
       </Section>
 
 
-      <Section className="py-32"
+      <Section className="py-32" id="projects"
       backgroundImage="/assets/images/realisation/hero.jpg"
       overlay
       >
@@ -229,6 +230,8 @@ export default function Home() {
 
         </Container>
       </Section>
+
+      <PartenariatSection/>
 
 
 

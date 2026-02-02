@@ -14,12 +14,17 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const MotionLink = motion(Link);
   const pathname = usePathname();
+  const hash =
+    typeof window !== "undefined" ? window.location.hash : "";
+
+    console.log(pathname)
+    console.log(hash)
 
  const navigation = [
   { name: "Accueil", href: "/" },
-  { name: "Projets", href: "/discographie" },
-  { name: "Partenariats", href: "/nos-services" },
-  { name: "Durabilité", href: "/j" },
+  { name: "Projets", href: "/#projects" },
+  { name: "Partenariats", href: "/#partenaires" },
+  { name: "Durabilité", href: "/#durabilite" },
   { name: "À propos", href: "/a-propos" },
   { name: "Actualités", href: "/blog" },
   { name: "Contact", href: "/contact" },
@@ -45,8 +50,10 @@ export default function Navbar() {
             <div className="hidden lg:flex gap-8">
                 {navigation.map((item) => {
                     const isActive =
-                    pathname === item.href ||
-                    (item.href !== "/" && pathname.startsWith(item.href));
+                    item.href === "/"
+                      ? pathname === "/"
+                      : pathname === item.href;
+
 
                     return (
                     <MotionLink
@@ -82,9 +89,10 @@ export default function Navbar() {
           <DisclosurePanel className="lg:hidden bg-black/80 text-white">
             <div className="flex flex-col px-6 py-4 gap-3">
                 {navigation.map((item) => {
-                const isActive =
-                    pathname === item.href ||
-                    (item.href !== "/" && pathname.startsWith(item.href));
+                  const isActive =
+                      item.href === "/"
+                        ? pathname === "/"
+                        : pathname === item.href;
 
                 return (
                     <MotionLink
