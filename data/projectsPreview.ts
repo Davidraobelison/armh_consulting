@@ -1,6 +1,6 @@
 export const projectsPreview = [
   {
-    title: "Destination européenne",
+    title: "Destinations",
     subtitle: "Programme de représentation B2B",
     description:
       "Roadshows, workshops ciblés et webinaires pour (re)positionner la destination auprès des tour-opérateurs et agences francophones. Résultat : visibilité renforcée et rendez-vous qualifiés.",
@@ -9,7 +9,7 @@ export const projectsPreview = [
     href: "/projets/destination-europeenne",
   },
   {
-    title: "Groupe hôtelier",
+    title: "Groupes hôteliers",
     subtitle: "Campagne multi-marchés",
     description:
       "Plan d’actions combinant sales blitz, participation à des salons et modules e-learning pour les prescripteurs. Objectif : renforcer la préférence de marque sur les marchés clés.",

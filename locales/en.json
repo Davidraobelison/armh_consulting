@@ -1,0 +1,66 @@
+{
+  "general": {
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "partners": "Partnerships",
+      "sustainability": "Sustainability",
+      "about": "About",
+      "news": "News",
+      "contact": "Contact"
+    },
+    "button": {
+      "ctaPrimary": "Let’s talk about your project",
+      "ctaSecondary": "View our projects"
+    }
+  },
+
+  "home": {
+    "hero": {
+      "title": "ARMH Consulting",
+      "subtitle": "<strong>B2B tourism representation</strong> – French and Francophone markets",
+      "description": "<strong>Sustainable projects and partnerships</strong> to strengthen your <strong>B2B</strong> presence"
+    },
+
+    "dna": {
+      "title": "Our DNA: Projects, Partnerships, Sustainability",
+      "intro": "<strong>Three pillars</strong> that guide all our actions and ensure concrete results in your target markets.",
+
+      "projects": {
+        "title": "Projects",
+        "description": "B2B actions that generate real business impact",
+        "cta": "View our projects →"
+      },
+
+      "partners": {
+        "title": "Partnerships",
+        "description": "An extension of your teams across Francophone markets",
+        "cta": "Become a partner →"
+      },
+
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "Commercial performance & responsible impact",
+        "cta": "Discover our approach →"
+      }
+    },
+
+    "engagement": {
+      "title": "Our commitment",
+      "paragraph1": "At ARMH Consulting, we place projects at the heart of your growth strategy: tailor-made actions designed to enhance the visibility of destinations and deliver tangible impact across Francophone markets.",
+      "paragraph2": "We believe in strong, long-term partnerships built on trust, transparency and co-creation with destinations, institutions and tourism stakeholders.",
+      "paragraph3": "Because the future of the tourism industry is being shaped today, we place sustainability at the core of every decision, advocating responsible tourism that respects destinations, local communities and resources, to create lasting value together."
+    },
+
+    "finalCta": {
+      "title": "Let’s talk about your project",
+      "description": "Are you a tourism stakeholder looking to strengthen your B2B presence in Francophone markets? Let’s build a tailored project together.",
+      "cta": "Let’s talk about your project →"
+    }
+  },
+  "partner": {
+    "title": "Our partners",
+    "subtitle": "Strong collaborations with committed industry players.",
+    "buttonCTA": "Discover →"
+  }
+}

@@ -1,4 +1,4 @@
-export const partners = [
+export const partnersFr = [
   {
     name: "MB-MH",
     website: "https://www.mb-mh.fr/",

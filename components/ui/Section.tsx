@@ -18,7 +18,7 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`relative py-24 ${className}`}
+      className={`relative py-20 ${className}`}
       style={
         backgroundImage
           ? {
@@ -31,9 +31,8 @@ export default function Section({
     >
       {/* Overlay optionnel */}
       {backgroundImage && overlay && (
-        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-black/50" />
       )}
-
       {/* Contenu */}
       <div className="relative z-10">
         {children}

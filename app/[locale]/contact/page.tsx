@@ -51,9 +51,10 @@ export default function Contact() {
                     href="mailto:contact@armh-consulting.com"
                     className="underline hover:text-blue-600"
                   >
-                    contact@armh-consulting.com
+                    armh.consulting@gmail.com
                   </a>
                 </p>
+                <p>Telephone : +33613452051</p>
               </div>
             </div>
 
