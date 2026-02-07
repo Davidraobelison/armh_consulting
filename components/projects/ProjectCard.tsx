@@ -64,13 +64,13 @@ export default function ProjectCard({
         </div>
 
         {/* CTA */}
-        {href && (
+        {/* {href && (
           <div className="pt-6 flex justify-center">
             <ButtonCTA href={href} variant="secondary">
               Voir le projet →
             </ButtonCTA>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

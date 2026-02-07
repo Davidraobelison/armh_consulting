@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-
 import { Josefin_Sans } from "next/font/google";
 
 const josefin = Josefin_Sans({
@@ -43,18 +40,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={josefin.variable}>
+    <html className={josefin.variable}>
       <body className="min-h-screen flex flex-col font-sans antialiased">
-        {/* Navbar en overlay (au-dessus du Hero des pages) */}
-        <Navbar />
-
-        {/* Contenu spécifique aux pages */}
-        <main className="flex-1">
-          {children}
-        </main>
-
-        {/* Footer global */}
-        <Footer />
+        {children}
       </body>
     </html>
   );

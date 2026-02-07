@@ -16,7 +16,7 @@ export default function ButtonCTA({
   className,
 }: ButtonCTAProps) {
   return (
-    <Link
+    <a
       href={href}
       className={clsx(
         "inline-flex items-center justify-center rounded-md px-6 py-3 text-sm md:text-base font-semibold",
@@ -32,6 +32,6 @@ export default function ButtonCTA({
       )}
     >
       {children}
-    </Link>
+    </a>
   );
 }

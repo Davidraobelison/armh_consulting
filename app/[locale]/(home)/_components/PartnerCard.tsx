@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ButtonCTA from "@/components/ui/ButtonCTA";
+import { getTranslations } from "next-intl/server";
 
 type PartnerCardProps = {
   name: string;
@@ -8,12 +9,14 @@ type PartnerCardProps = {
   website: string;
 };
 
-export default function PartnerCard({
+export default async function PartnerCard({
   name,
   description,
   logo,
   website,
 }: PartnerCardProps) {
+  const tPartners = await getTranslations("partner")
+
   return (
     <div className="flex flex-col h-full overflow-hidden rounded-lg bg-white/70 shadow-sm hover:shadow-md transition-shadow">
 
@@ -42,7 +45,7 @@ export default function PartnerCard({
         {/* CTA */}
         <div className="pt-6 flex justify-center">
           <ButtonCTA href={website} variant="secondary">
-            Découvrir →
+            {tPartners("buttonCTA")}
           </ButtonCTA>
         </div>
       </div>

@@ -1,15 +1,18 @@
 import Image from "next/image";
+import ButtonCTA from "./ui/ButtonCTA";
 
 type HeroProps = {
   title: string;
   subtitle?: React.ReactNode;
   backgroundImage: string;
+  isCallToAction?: boolean
 };
 
 export default function Hero({
   title,
   subtitle,
   backgroundImage,
+  isCallToAction
 }: HeroProps) {
   return (
     <section className="relative h-[80vh] min-h-[500px] w-full">
@@ -37,6 +40,19 @@ export default function Hero({
           </p>
         )}
       </div>
+
+
+      {isCallToAction && (
+        <div className="pt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <ButtonCTA href="/contact">
+            Parlons de votre projet
+          </ButtonCTA>
+
+          <ButtonCTA href="/realisation" variant="secondary">
+            Voir nos projets
+          </ButtonCTA>
+        </div>
+      )}
     </section>
   );
 }

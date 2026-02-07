@@ -1,9 +1,17 @@
-import Container from "@/components/ui/Container";
-import Section from "@/components/ui/Section";
-import { partners } from "@/data/partners";
 import PartnerCard from "./PartnerCard";
+import { getLocale, getTranslations } from "next-intl/server";
+import { partnersByLocale } from "@/data/partners/index";
+import { Locale } from "@/lib/i18n/routing";
+import Section from "@/components/ui/Section";
+import Container from "@/components/ui/Container";
 
-export function PartenariatSection() {
+
+
+export default async function PartnersPage() {
+  const locale = await getLocale(); // "fr" | "en"
+  const partners = partnersByLocale[locale as Locale];
+  const tPartners = await getTranslations("partner")
+
   return (
     <Section
       backgroundImage="/assets/images/others/bg_image_principale.webp" 
@@ -15,10 +23,10 @@ export function PartenariatSection() {
         {/* TITRE */}
         <div className="max-w-3xl mx-auto text-center mb-12 space-y-3">
           <h2 className="text-2xl font-semibold uppercase text-white">
-            Nos partenaires
+            {tPartners("title")}
           </h2>
           <p className="text-white/70 text-lg leading-relaxed">
-            Des collaborations solides avec des acteurs engagés.
+            {tPartners("subtitle")}
           </p>
         </div>
 
