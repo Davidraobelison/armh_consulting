@@ -32,7 +32,7 @@ export default function Navbar() {
     { key: "partners", href: "/partenaire" },
     { key: "sustainability", href: "/#durabilite" },
     { key: "about", href: "/a-propos" },
-    { key: "news", href: "/blog" },
+    // { key: "news", href: "/blog" },
     { key: "contact", href: "/contact" }
   ];
   const router = useRouter();

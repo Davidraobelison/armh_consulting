@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Josefin_Sans } from "next/font/google";
+import CookieBanner from "@/components/CookieBanner";
 
 const josefin = Josefin_Sans({
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
     <html className={josefin.variable}>
       <body className="min-h-screen flex flex-col font-sans antialiased">
         {children}
+        <CookieBanner /> 
       </body>
     </html>
   );
