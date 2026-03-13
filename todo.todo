@@ -1,0 +1,15 @@
+02/02/2026
+    1- Faire la page de partenaires 
+        - LIen des partenaires a resumer 
+            * https://www.mb-mh.fr/
+            * https://indexperience.fr/
+            * https://essenceoftheworld.com/en
+            * https://www.nortours.fr/
+
+    2- Faire en sorte que si on passes dans la navigation , on active la section des partenaries dans Homapage
+
+
+GIT : 
+ * git add .
+ * git commit -m ""   
+ * git push origin develop
