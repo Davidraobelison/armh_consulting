@@ -19,7 +19,7 @@ export default function Footer() {
 
         <div className="flex flex-col items-center space-y-2">
           <Link
-            href="/rse"
+            href="/politique-rse"
             className="hover:underline hover:text-gray-300 transition"
           >
             Politique RSE
@@ -53,14 +53,6 @@ export default function Footer() {
               whileHover={{ scale: 1.15 }}
             >
               <FaLinkedin className="hover:text-blue-500 transition" />
-            </MotionLink>
-
-            <MotionLink
-              href="https://x.com"
-              target="_blank"
-              whileHover={{ scale: 1.15 }}
-            >
-              <FaXTwitter className="hover:text-sky-400 transition" />
             </MotionLink>
 
             <MotionLink
