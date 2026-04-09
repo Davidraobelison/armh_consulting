@@ -13,3 +13,8 @@ GIT :
  * git add .
  * git commit -m ""   
  * git push origin develop
+
+
+ * Systeme de tracking, une liste deroulante 
+ * Integrer les deux logos 
+ * Penser aux serveurs pour soummettre les serveurs
