@@ -174,8 +174,8 @@ export default function BBVoyagePartnerPage() {
 
                   <div className="flex items-center gap-3 mt-4">
                     <Image
-                    src="/assets/images/partenaires/logo/BB Voyage Logo high res.JPG"
-                    alt="Logo IndeXperience"
+                    src="/assets/images/partenaires/logo/LOGO INDEX2.jpg"
+                    alt="Logo BBVoyage"
                     width={48}
                     height={48}
                     className="object-contain"
@@ -184,8 +184,8 @@ export default function BBVoyagePartnerPage() {
                     by
                     </span>
                     <Image
-                    src="/assets/images/partenaires/logo/LOGO INDEX2.jpg"
-                    alt="Logo BBVoyage"
+                    src="/assets/images/partenaires/logo/BB Voyage Logo high res.JPG"
+                    alt="Logo IndeXperience"
                     width={48}
                     height={48}
                     className="object-contain"
@@ -345,7 +345,7 @@ export default function BBVoyagePartnerPage() {
                 <Reveal delay={0.2}>
                     <div className="relative rounded-2xl overflow-hidden">
                     <Image
-                        src="/assets/images/partenaires/Fete_en_Inde.jpeg"
+                        src="/assets/images/partenaires/Fete_en_Inde_2.jpeg"
                         alt="Fête en Inde"
                         width={560}
                         height={480}
@@ -642,7 +642,7 @@ export default function BBVoyagePartnerPage() {
             {/* 3 Destination Photos */}
             <div className="grid gap-6 md:grid-cols-3">
               <DestinationCard
-                image="/assets/images/partenaires/Fete_en_Inde.jpeg"
+                image="/assets/images/partenaires/Fete_en_Inde_2.jpeg"
                 alt="Fête en Inde"
                 name="Inde"
                 description="Des villages, des maisons de caractère, des traditions vivantes, des adresses choisies pour leur âme plutôt que pour leur seule visibilité."
