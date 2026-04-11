@@ -345,7 +345,7 @@ export default function BBVoyagePartnerPage() {
                 <Reveal delay={0.2}>
                     <div className="relative rounded-2xl overflow-hidden">
                     <Image
-                        src="/assets/images/partenaires/Fete_en_Inde_2.jpeg"
+                        src="/assets/images/partenaires/fete_en_inde.jpeg"
                         alt="Fête en Inde"
                         width={560}
                         height={480}
@@ -642,7 +642,7 @@ export default function BBVoyagePartnerPage() {
             {/* 3 Destination Photos */}
             <div className="grid gap-6 md:grid-cols-3">
               <DestinationCard
-                image="/assets/images/partenaires/Fete_en_Inde_2.jpeg"
+                image="/assets/images/partenaires/fete_en_inde.jpeg"
                 alt="Fête en Inde"
                 name="Inde"
                 description="Des villages, des maisons de caractère, des traditions vivantes, des adresses choisies pour leur âme plutôt que pour leur seule visibilité."
