@@ -128,7 +128,7 @@ export default function BBVoyagePartnerPage() {
               </Link>
               <span>/</span>
               <Link
-                href="/partenaires"
+                href="/partenaire"
                 className="hover:text-white transition-colors"
               >
                 Partenaires
