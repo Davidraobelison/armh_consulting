@@ -202,15 +202,12 @@ export default function ContactUsForm() {
           />
         </div>
 
-        {/* Divider */}
         <div className="border-t border-white/10" />
 
-        {/* Error message */}
         {error && (
           <p className="text-red-400 text-sm text-center">{error}</p>
         )}
 
-        {/* RGPD + Submit */}
         <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
           <label className="flex items-start gap-3 cursor-pointer flex-1">
             <input
