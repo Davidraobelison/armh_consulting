@@ -202,7 +202,6 @@ export default function ContactUsForm() {
           />
         </div>
 
-        {/* Divider */}
         <div className="border-t border-white/10" />
 
         {error && (
