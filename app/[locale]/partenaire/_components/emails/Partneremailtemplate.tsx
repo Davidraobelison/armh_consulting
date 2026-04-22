@@ -13,31 +13,37 @@ import {
   Text,
 } from '@react-email/components';
 
-interface ContactEmailTemplateProps {
+interface PartnerEmailTemplateProps {
   nom: string;
   entreprise: string;
   email: string;
-  objet: string;
+  profil: string;
+  typePartenariat: string;
+  horizon: string;
   provenance: string;
-  message: string;
+  besoin: string;
 }
 
 const baseUrl = process.env.APP_URL
+  ? `https://${process.env.APP_URL}`
+  : '';
 
-export function ContactEmailTemplate({
+export function PartnerEmailTemplate({
   nom,
   entreprise,
   email,
-  objet,
+  profil,
+  typePartenariat,
+  horizon,
   provenance,
-  message,
-}: ContactEmailTemplateProps) {
+  besoin,
+}: PartnerEmailTemplateProps) {
   return (
     <Html>
       <Head />
       <Tailwind>
         <Body className="bg-[#eaf2fb] font-sans text-[#0d2a4a]">
-          <Preview>Nouveau message de {nom} — {objet}</Preview>
+          <Preview>Nouvelle demande partenariat de {nom} — {typePartenariat}</Preview>
 
           <Container className="p-5 mx-auto max-w-[600px]">
             <Section className="bg-white rounded-xl overflow-hidden border border-[#c5ddf4]">
@@ -51,7 +57,7 @@ export function ContactEmailTemplate({
                   alt="ARMH Consulting"
                 />
                 <Text className="text-[#a8d0f0] text-[12px] m-0 mt-2 tracking-wide">
-                  Nouveau message reçu via le formulaire de contact
+                  Nouvelle demande de partenariat reçue
                 </Text>
               </Section>
 
@@ -60,8 +66,16 @@ export function ContactEmailTemplate({
 
               {/* Content */}
               <Section className="py-6 px-8">
+
+                {/* Badge type partenariat */}
+                <Section className="mb-4">
+                  <Text className="inline-block bg-[#0d3b6e] text-white text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full m-0">
+                    {typePartenariat}
+                  </Text>
+                </Section>
+
                 <Heading className="text-[#0d3b6e] text-[18px] font-bold mb-4 mt-0">
-                  Message de {nom}
+                  Demande de {nom}
                 </Heading>
 
                 {/* Info rows */}
@@ -69,17 +83,19 @@ export function ContactEmailTemplate({
                   <InfoRow label="Nom & prénom" value={nom} />
                   <InfoRow label="Entreprise" value={entreprise} shaded />
                   <InfoRow label="Email" value={email} link={`mailto:${email}`} />
-                  <InfoRow label="Objet" value={objet} shaded />
+                  <InfoRow label="Profil" value={profil} shaded />
+                  <InfoRow label="Type de partenariat" value={typePartenariat} />
+                  <InfoRow label="Horizon de démarrage" value={horizon} shaded />
                   <InfoRow label="Provenance" value={provenance} />
                 </Section>
 
-                {/* Message block */}
+                {/* Besoin block */}
                 <Section className="bg-[#eaf2fb] border-l-4 border-[#1e7abf] px-5 py-4 rounded-r-lg">
                   <Text className="text-[#1e7abf] text-[11px] font-bold uppercase tracking-widest m-0 mb-2">
-                    Message
+                    Besoin exprimé
                   </Text>
                   <Text className="text-[#0d2a4a] text-[15px] leading-[26px] m-0 whitespace-pre-wrap">
-                    {message}
+                    {besoin}
                   </Text>
                 </Section>
 
@@ -98,7 +114,7 @@ export function ContactEmailTemplate({
 
               <Section className="px-8 py-4 bg-[#f4f9fe]">
                 <Text className="text-[#7aadce] text-[11px] text-center m-0">
-                  Message envoyé depuis le formulaire de contact · armhconsulting.com
+                  Demande reçue via le formulaire partenaire · armhconsulting.com
                 </Text>
               </Section>
 
@@ -137,13 +153,15 @@ function InfoRow({
   );
 }
 
-ContactEmailTemplate.PreviewProps = {
+PartnerEmailTemplate.PreviewProps = {
   nom: 'Jean Dupont',
   entreprise: 'Agence Voyage Paris',
   email: 'jean.dupont@agence.com',
-  objet: 'Partenariat',
+  profil: 'Tour-opérateur / agence de voyages',
+  typePartenariat: 'Représentation marchés francophones',
+  horizon: 'Projet en cadrage',
   provenance: 'LinkedIn',
-  message: "Bonjour, je souhaite discuter d'un partenariat potentiel pour des voyages en Inde.",
-} as ContactEmailTemplateProps;
+  besoin: "Nous cherchons un partenaire pour représenter notre offre Inde sur le marché français.",
+} as PartnerEmailTemplateProps;
 
-export default ContactEmailTemplate;
+export default PartnerEmailTemplate;

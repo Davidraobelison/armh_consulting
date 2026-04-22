@@ -44,14 +44,13 @@ export default function ProjectsPage() {
       <Section
         className="py-32"
         backgroundImage="/assets/images/projects/1.webp"
-        overlay
       >
         <Container>
           <div className="max-w-3xl mx-auto text-center space-y-4 mt-16">
             <h1 className="text-3xl md:text-5xl font-light tracking-wide text-white uppercase">
               Quelques projets qui parlent pour nous
             </h1>
-            <p className="text-white/70 text-lg md:text-xl leading-relaxed">
+            <p className="text-white text-lg md:text-xl leading-relaxed">
               Un aperçu des actions que nous menons avec nos partenaires
               sur les marchés francophones.
             </p>

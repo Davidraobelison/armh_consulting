@@ -108,8 +108,56 @@ function DestinationCard({
 
 export default function BBVoyagePartnerPage() {
   const params = useParams();
-  const router = useRouter();
   const slug = (params?.categorie as string) ?? "dmc";
+
+  if (slug !== "dmc") {
+    return (
+      <Section
+        className="min-h-screen py-40"
+        backgroundImage="/assets/images/others/img5.webp"
+        overlay
+      >
+        <Container>
+
+          <Reveal>
+            <div className="flex items-center gap-3 text-sm text-white/40 mb-12">
+              <Link href="/" className="hover:text-white transition-colors">
+                Accueil
+              </Link>
+              <span>/</span>
+              <Link
+                href="/partenaire"
+                className="hover:text-white transition-colors"
+              >
+                Partenaires
+              </Link>
+              <span>/</span>
+              <Link
+                href={`/partenaires/${slug}`}                
+                className="hover:text-white transition-colors"
+              >
+                {CATEGORIES.find((c) => c.slug === slug)?.label}
+              </Link>
+              <span>/</span>
+              <span className="text-white/70">BBVoyage / IndeXperience</span>
+            </div>
+          </Reveal>
+          <div className="text-center text-white space-y-6">
+            <h2 className="text-4xl font-semibold">Contenu à venir</h2>
+            <p className="text-white/70 text-lg max-w-xl mx-auto">
+              Cette section est en cours de construction.
+            </p>
+            <div className="pt-4">
+              <ButtonCTA href="/partenaires/dmc" variant="secondary">
+                Découvrir nos DMC →
+              </ButtonCTA>
+            </div>
+          </div>
+        </Container>
+      </Section>
+    );
+  }
+
 
   return (
     <>
@@ -561,10 +609,10 @@ export default function BBVoyagePartnerPage() {
               </Reveal>
             </div>
 
-            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               <SpecialiteCard
                 title="Ayurvéda authentique"
-                description="Au Kerala, l'approche privilégie des centres sérieux, des médecins diplômés, des cures cohérentes et une sélection qui va au-delà du simple « spa exotique »."
+                description="Au Kerala, l'approche privilégie des centres sérieux,des médecins diplômés, des cures cohérentes et une sélection qui va au-delà du simple « spa exotique »."
               />
               <SpecialiteCard
                 title="Bien-être transformateur"
@@ -642,7 +690,7 @@ export default function BBVoyagePartnerPage() {
             {/* 3 Destination Photos */}
             <div className="grid gap-6 md:grid-cols-3">
               <DestinationCard
-                image="/assets/images/partenaires/fete-en-inde.jpeg"
+                image="/assets/images/partenaires/fete-en-inde-2.jpeg"
                 alt="Fête en Inde"
                 name="Inde"
                 description="Des villages, des maisons de caractère, des traditions vivantes, des adresses choisies pour leur âme plutôt que pour leur seule visibilité."

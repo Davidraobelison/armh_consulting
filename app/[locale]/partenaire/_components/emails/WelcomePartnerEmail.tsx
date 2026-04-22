@@ -12,19 +12,22 @@ import {
   Text,
 } from '@react-email/components';
 
-interface WelcomeEmailProps {
+interface WelcomePartnerEmailProps {
   nom: string;
+  typePartenariat: string;
 }
 
 const baseUrl = process.env.APP_URL
+  ? `https://${process.env.APP_URL}`
+  : '';
 
-export function WelcomeEmail({ nom }: WelcomeEmailProps) {
+export function WelcomePartnerEmail({ nom, typePartenariat }: WelcomePartnerEmailProps) {
   return (
     <Html>
       <Head />
       <Tailwind>
         <Body className="bg-[#eaf2fb] font-sans">
-          <Preview>ARMH Consulting — Nous avons bien reçu votre message</Preview>
+          <Preview>ARMH Consulting — Votre demande de partenariat a bien été reçue</Preview>
 
           <Container className="mx-auto py-8 px-4 max-w-[600px]">
 
@@ -50,20 +53,21 @@ export function WelcomeEmail({ nom }: WelcomeEmailProps) {
               </Text>
 
               <Text className="text-[16px] leading-[28px] text-[#0d2a4a]">
-                Nous avons bien reçu votre message et nous vous en remercions.
+                Nous avons bien reçu votre demande concernant un partenariat de type{' '}
+                <strong>{typePartenariat}</strong> et nous vous en remercions.
               </Text>
 
               <Text className="text-[16px] leading-[28px] text-[#0d2a4a]">
-                Notre équipe reviendra vers vous dans les meilleurs délais pour
-                répondre à votre demande.
+                Notre équipe va étudier votre projet avec attention et reviendra
+                vers vous dans les meilleurs délais pour en discuter.
               </Text>
 
               <Section className="text-center my-8">
                 <Button
                   className="bg-[#0d3b6e] rounded-lg text-white text-[15px] no-underline text-center px-8 py-3 font-semibold"
-                  href="https://armhconsulting.com"
+                  href="https://armh-consulting.com/partenaire"
                 >
-                  Découvrir ARMH Consulting →
+                  En savoir plus sur nos partenariats →
                 </Button>
               </Section>
 
@@ -91,8 +95,9 @@ export function WelcomeEmail({ nom }: WelcomeEmailProps) {
   );
 }
 
-WelcomeEmail.PreviewProps = {
+WelcomePartnerEmail.PreviewProps = {
   nom: 'Jean Dupont',
-} as WelcomeEmailProps;
+  typePartenariat: 'Représentation marchés francophones',
+} as WelcomePartnerEmailProps;
 
-export default WelcomeEmail;
+export default WelcomePartnerEmail;

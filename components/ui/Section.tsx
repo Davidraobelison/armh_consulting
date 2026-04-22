@@ -24,7 +24,7 @@ export default function Section({
           ? {
               backgroundImage: `url(${backgroundImage})`,
               backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundPosition: "bottom",
             }
           : undefined
       }
