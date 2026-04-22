@@ -18,12 +18,11 @@ export default async function Home() {
     <>
       <Section
         backgroundImage="/assets/images/others/bg_image_principale.webp"
-        overlay
-        className="py-40 relative h-auto min-h-auto w-full"
+        className="py-23 relative h-auto min-h-auto w-full"
       >
         <Container className="" >
-          <div className="text-center max-w-4xl mx-auto space-y-8 text-white">
-            <div className="relative z-10 h-full flex flex-col items-center justify-center text-white text-center px-6">
+          <div className="text-center max-w-4xl mx-auto space-y-8 text-white py-10">
+            <div className="relative z-10 h-full flex flex-col items-center justify-center text-white text-center px-2">
               <Reveal>
                 <h1 className="text-5xl md:text-6xl font-light tracking-wide">
                   {t("hero.title")}
