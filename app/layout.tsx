@@ -10,6 +10,13 @@ const josefin = Josefin_Sans({
   display: "swap",
 });
 
+import { Cormorant_Garamond } from "next/font/google";
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: "ARMH Consulting – Tourisme, Marketing & Hôtellerie",
   description:
@@ -41,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={josefin.variable}>
+    <html className={cormorant.className}>
       <body className="min-h-screen flex flex-col font-sans antialiased">
         {children}
         <CookieBanner /> 

@@ -1,5 +1,5 @@
-import ContactEmailTemplate from "@/app/[locale]/contact/_components/emails/ContactEmailTemplate";
-import WelcomeEmail from "@/app/[locale]/contact/_components/emails/WelcomeEmail";
+import PartnerEmailTemplate from "@/app/[locale]/partenaire/_components/emails/Partneremailtemplate";
+import WelcomePartnerEmail from "@/app/[locale]/partenaire/_components/emails/WelcomePartnerEmail";
 import { isAllowedOrigin } from "@/lib/guard";
 import { Resend } from "resend";
 
@@ -8,7 +8,9 @@ const emailTO = process.env.EMAIL_TO ?? "armh.consulting@gmail.com";
 const emailFrom = process.env.EMAIL_FROM ?? "ARMH Consulting <onboarding@armh-consulting.com>";
 const emailTo = emailTO;
 
-const ALLOWED_OBJET = ["information", "collaboration", "partenariat", "intervention", "presse", "autre"];
+const ALLOWED_PROFIL = ["destination", "hotel", "dmc", "to", "formation", "autre"];
+const ALLOWED_TYPE_PARTENARIAT = ["commercial", "representation", "evenement", "formation", "surmesure"];
+const ALLOWED_HORIZON = ["pret", "cadrage", "info"];
 const ALLOWED_PROVENANCE = ["google", "linkedin", "instagram", "facebook", "bouche_a_oreille", "salon", "partenaire", "presse", "autre"];
 
 // Simple in-memory rate limiter (resets on server restart / cold start)
@@ -48,7 +50,7 @@ export async function POST(req: Request) {
     }
 
     const body = await req.json();
-    const { nom, entreprise, email, objet, provenance, message, website } = body;
+    const { nom, entreprise, email, profil, typePartenariat, horizon, provenance, besoin, website } = body;
 
     // Honeypot — bots fill this hidden field, humans don't
     if (website) {
@@ -65,37 +67,43 @@ export async function POST(req: Request) {
     if (!email || !isValidEmail(email) || email.length > 254) {
       return Response.json({ error: "Email invalide." }, { status: 400 });
     }
-    if (!objet || !ALLOWED_OBJET.includes(objet)) {
-      return Response.json({ error: "Objet invalide." }, { status: 400 });
+    if (!profil || !ALLOWED_PROFIL.includes(profil)) {
+      return Response.json({ error: "Profil invalide." }, { status: 400 });
+    }
+    if (!typePartenariat || !ALLOWED_TYPE_PARTENARIAT.includes(typePartenariat)) {
+      return Response.json({ error: "Type de partenariat invalide." }, { status: 400 });
+    }
+    if (!horizon || !ALLOWED_HORIZON.includes(horizon)) {
+      return Response.json({ error: "Horizon invalide." }, { status: 400 });
     }
     if (!provenance || !ALLOWED_PROVENANCE.includes(provenance)) {
       return Response.json({ error: "Provenance invalide." }, { status: 400 });
     }
-    if (!message || typeof message !== "string" || message.trim().length < 10 || message.trim().length > 5000) {
-      return Response.json({ error: "Message trop court ou trop long." }, { status: 400 });
+    if (!besoin || typeof besoin !== "string" || besoin.trim().length < 10 || besoin.trim().length > 5000) {
+      return Response.json({ error: "Besoin trop court ou trop long." }, { status: 400 });
     }
 
     const safeNom = nom.trim();
     const safeEntreprise = entreprise.trim();
-    const safeMessage = message.trim();
+    const safeBesoin = besoin.trim();
 
-    const { error: errorContact } = await resend.emails.send({
+    const { error: errorPartner } = await resend.emails.send({
       from: emailFrom,
       to: [emailTo],
       replyTo: email,
-      subject: `[ARMH] Nouveau message — ${objet}`,
-      react: ContactEmailTemplate({ nom: safeNom, entreprise: safeEntreprise, email, objet, provenance, message: safeMessage }),
+      subject: `[ARMH] Nouvelle demande partenariat — ${typePartenariat}`,
+      react: PartnerEmailTemplate({ nom: safeNom, entreprise: safeEntreprise, email, profil, typePartenariat, horizon, provenance, besoin: safeBesoin }),
     });
 
-    if (errorContact) {
-      return Response.json({ error: errorContact }, { status: 500 });
+    if (errorPartner) {
+      return Response.json({ error: errorPartner }, { status: 500 });
     }
 
     const { error: errorWelcome } = await resend.emails.send({
       from: emailFrom,
       to: [email],
-      subject: "ARMH Consulting — Nous avons bien reçu votre message",
-      react: WelcomeEmail({ nom: safeNom }),
+      subject: "ARMH Consulting — Votre demande de partenariat a bien été reçue",
+      react: WelcomePartnerEmail({ nom: safeNom, typePartenariat }),
     });
 
     if (errorWelcome) {
