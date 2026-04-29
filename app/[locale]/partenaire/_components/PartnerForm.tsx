@@ -17,6 +17,7 @@ export default function PartnerForm() {
     horizon: "",
     provenance: "",
     besoin: "",
+    website: "", // honeypot — must stay empty
   });
 
   const handleChange = (
@@ -41,7 +42,7 @@ export default function PartnerForm() {
 
       if (res.ok) {
         setSuccess(true);
-        setFormData({ nom: "", entreprise: "", email: "", profil: "", typePartenariat: "", horizon: "", provenance: "", besoin: "" });
+        setFormData({ nom: "", entreprise: "", email: "", profil: "", typePartenariat: "", horizon: "", provenance: "", besoin: "", website: "" });
         setRgpd(false);
       } else {
         setError("Une erreur est survenue. Veuillez réessayer.");
@@ -96,6 +97,20 @@ export default function PartnerForm() {
       </div>
 
       <form onSubmit={handleSubmit} className="px-8 py-8 space-y-6">
+
+        {/* Honeypot anti-bot — hidden from users */}
+        <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
+          <label htmlFor="website-partner">Website</label>
+          <input
+            id="website-partner"
+            type="text"
+            name="website"
+            value={formData.website}
+            onChange={handleChange}
+            tabIndex={-1}
+            autoComplete="off"
+          />
+        </div>
 
         {/* Row 1 — Nom + Entreprise */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
