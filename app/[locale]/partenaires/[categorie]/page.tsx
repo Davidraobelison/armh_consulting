@@ -8,6 +8,7 @@ import Reveal from "@/components/ui/Reveal";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
+import SunSiyamPage from "@/app/[locale]/partenaires/_components/SunSiyamPage";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -19,6 +20,7 @@ type CategoryData = {
 const CATEGORIES: CategoryData[] = [
   { slug: "destinations", label: "Destinations & institutions touristiques" },
   { slug: "hotels", label: "Hôtels et groupes hôteliers" },
+  { slug: "sun-siyam", label: "Sun Siyam Resorts" },
   { slug: "dmc", label: "DMC & Prestataires locaux" },
   { slug: "touroperateurs", label: "Tours Opérateurs & Agences de voyages" },
   { slug: "formation", label: "Organismes de formation & Écoles du tourisme" },
@@ -109,6 +111,10 @@ function DestinationCard({
 export default function BBVoyagePartnerPage() {
   const params = useParams();
   const slug = (params?.categorie as string) ?? "dmc";
+
+  if (slug === "sun-siyam") {
+    return <SunSiyamPage />;
+  }
 
   if (slug !== "dmc") {
     return (
