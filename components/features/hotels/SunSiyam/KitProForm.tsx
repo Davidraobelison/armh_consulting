@@ -1,5 +1,3 @@
-// components/Hotels/SunSiyam/KitProForm.tsx
-
 "use client";
 
 import { useState } from "react";
@@ -26,10 +24,10 @@ export default function KitProForm() {
   };
 
   const inputClass =
-    "w-full border border-gray-200 rounded-lg px-4 py-2.5 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#1a3a32] transition-colors";
+    "w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-sm text-white placeholder-white/50 focus:outline-none focus:border-white/50 transition-colors backdrop-blur-sm";
 
   return (
-    <div className="bg-white rounded-2xl p-7 space-y-4 shadow-xl">
+    <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-7 space-y-4 shadow-xl">
       <div className="grid grid-cols-2 gap-3">
         <input
           type="text"
@@ -56,14 +54,14 @@ export default function KitProForm() {
       />
 
       <div className="grid grid-cols-2 gap-3">
-        <select value={form.type} onChange={set("type")} className={inputClass}>
+        <select value={form.type} onChange={set("type")} className={`${inputClass} [&>option]:bg-[#0f1729] [&>option]:text-white`}>
           <option value="">Vous êtes...</option>
           <option value="agence">Agence de voyages</option>
           <option value="to">Tour-opérateur</option>
           <option value="mice">MICE / Événementiel</option>
           <option value="autre">Autre</option>
         </select>
-        <select value={form.besoin} onChange={set("besoin")} className={inputClass}>
+        <select value={form.besoin} onChange={set("besoin")} className={`${inputClass} [&>option]:bg-[#0f1729] [&>option]:text-white`}>
           <option value="">Votre besoin principal</option>
           <option value="kit">Recevoir le Kit Pro</option>
           <option value="devis">Demande de devis</option>
@@ -80,21 +78,21 @@ export default function KitProForm() {
         className={`${inputClass} resize-none`}
       />
 
-      <label className="flex items-start gap-2 cursor-pointer">
+      <label className="flex items-start gap-3 cursor-pointer">
         <input
           type="checkbox"
           checked={form.rgpd}
           onChange={set("rgpd")}
-          className="mt-0.5 shrink-0"
+          className="mt-0.5 shrink-0 accent-[#1f4fd8]"
         />
-        <span className="text-[11px] text-gray-400 leading-relaxed">
+        <span className="text-sm text-white/70 leading-relaxed">
           J'accepte que mes données soient utilisées par ARMH Consulting pour me recontacter
           concernant ce Kit Pro. Conformément au RGPD, vous pouvez demander la suppression
           de vos données à tout moment.
         </span>
       </label>
 
-      <ButtonCTA href="/contact" variant="primary" className="w-full justify-center">
+      <ButtonCTA href="/contact" variant="primary" className="w-full! justify-center">
         Recevoir le Kit Pro →
       </ButtonCTA>
     </div>

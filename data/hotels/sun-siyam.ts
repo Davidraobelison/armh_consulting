@@ -11,8 +11,9 @@ export type HotelFilter = "tous" | "familles" | "honeymoon" | "luxe" | "srilanka
 
 export type Hotel = {
   id: number;
+  slug: string;
   name: string;
-  collection: "Luxury Collection" | "Privé Collection" | "Lifestyle Collection";
+  collection: "Collection luxe" | " Collection privée" | "Collection lifestyle ";
   collectionColor: string;
   tagline: string;
   image: string;
@@ -58,66 +59,72 @@ export type FilterTab = {
 export const HOTELS: Hotel[] = [
   {
     id: 1,
+    slug: "world",
     name: "Siyam World Maldives",
-    collection: "Luxury Collection",
+    collection: "Collection luxe",
     collectionColor: "bg-amber-700",
-    tagline: "L'angle anti-ennui pour familles et tribus.",
-    image: "/assets/images/partenaires/sun-siyam/SW-1.jpg",
+    tagline: "Séjour sensation pour familles et tribus.",
+    image: "/assets/images/partenaires/sun-siyam/hotels/SW-2.jpg",
     tags: ["tous", "familles", "activites"],
     tagLabels: ["Familles", "Fun"],
     highlights: ["Villas avec toboggan", "Waterpark flottant", "Ranch équestre"],
   },
   {
     id: 2,
+    slug: "iru-fushi",
     name: "Sun Siyam Iru Fushi",
-    collection: "Luxury Collection",
+    collection: "Collection luxe",
     collectionColor: "bg-amber-700",
     tagline: "La valeur sûre luxe des Maldives.",
-    image: "/assets/images/partenaires/sun-siyam/SSIF-1.jpg",
+    image: "/assets/images/partenaires/sun-siyam/hotels/SSIF-2.jpg",
     tags: ["tous", "luxe", "familles", "honeymoon"],
     tagLabels: ["Luxe", "Iconique"],
     highlights: ["15 restaurants et bars", "Spa primé", "Couples et familles"],
   },
   {
     id: 3,
+    slug: "iru-veli",
     name: "Sun Siyam Iru Veli",
-    collection: "Privé Collection",
+    collection: " Collection privée",
     collectionColor: "bg-teal-700",
     tagline: "L'intime et romantique au-dessus du lagon.",
-    image: "/assets/images/partenaires/sun-siyam/SSIV.jpg",
+    image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg",
     tags: ["tous", "honeymoon", "luxe"],
     tagLabels: ["Romantique", "Intime"],
     highlights: ["Toutes villas avec piscine privée", "Dine-around 24/7", "Ambiance ultra romantique"],
   },
   {
     id: 4,
+    slug: "vilu-reef",
     name: "Sun Siyam Vilu Reef",
-    collection: "Privé Collection",
+    collection: " Collection privée",
     collectionColor: "bg-teal-700",
     tagline: "La love story maldivienne en harmonie avec le récif.",
-    image: "/assets/images/partenaires/sun-siyam/SSVR.jpg",
+    image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg",
     tags: ["tous", "honeymoon", "activites"],
     tagLabels: ["Récif", "Romantique"],
     highlights: ["Récif maison exceptionnel", "Barefoot luxury", "Expériences privées"],
   },
   {
     id: 5,
+    slug: "olhuveli",
     name: "Sun Siyam Olhuveli",
-    collection: "Lifestyle Collection",
+    collection: "Collection lifestyle ",
     collectionColor: "bg-sky-700",
-    tagline: "Le resort tout-en-un, pour ne pas se tromper.",
-    image: "/assets/images/partenaires/sun-siyam/SSO.jpg",
+    tagline: "L’adresse idéale pour vivre les Maldives en toute sérénité",
+    image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.jpg",
     tags: ["tous", "familles", "activites"],
     tagLabels: ["Tout-compris", "Actif"],
     highlights: ["Trois îles, mille ambiances", "Grande piscine", "Sports & activités"],
   },
   {
     id: 6,
+    slug: "pasikudah",
     name: "Sun Siyam Pasikudah",
-    collection: "Privé Collection",
+    collection: " Collection privée",
     collectionColor: "bg-teal-700",
-    tagline: "Le Sri Lanka confidentiel : culturel et balnéaire.",
-    image: "/assets/images/partenaires/sun-siyam/SSP.jpg",
+    tagline: "Le Sri Lanka secret, entre trésors culturels et échappées balnéaires.",
+    image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.jpg",
     tags: ["tous", "srilanka", "luxe"],
     tagLabels: ["Sri Lanka", "Culture"],
     highlights: ["Spa ayurvédique", "Excursions culturelles", "Plage préservée"],

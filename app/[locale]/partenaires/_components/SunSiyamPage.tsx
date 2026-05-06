@@ -6,7 +6,7 @@ import ButtonCTA from "@/components/ui/ButtonCTA";
 import Link from "next/link";
 import Reveal from "@/components/ui/Reveal";
 import Image from "next/image";
-import { Building2, Layers, Globe, ShieldCheck } from "lucide-react";
+import { Building2, Layers, Globe, ShieldCheck, ArrowRightCircleIcon } from "lucide-react";
 import HotelsGrid from "@/components/features/hotels/SunSiyam/HotelsGrid";
 import ClientProfileCard from "@/components/features/hotels/SunSiyam/ClientProfileCard";
 import AudienceCard from "@/components/features/hotels/SunSiyam/AudienceCard";
@@ -19,29 +19,29 @@ import {
   KIT_PRO_ITEMS,
   WHY_ARMH,
 } from "@/data/hotels/sun-siyam";
+import HeroCarousel from "./HeroCarroussel";
 
 export default function SunSiyamPage() {
   return (
     <>
       {/* ── 1. HERO ───────────────────────────────────────────────────────── */}
-      <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero.jpg"
+      {/* <Section
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/hero-3.JPG"
         overlay
         className="py-32"
       >
         <Container>
           <Reveal delay={0.1}>
-            <div className="flex items-center gap-3 text-sm text-white/40 mb-12">
+            <div className="flex items-center gap-3 text-sm text-white mb-12">
               <Link href="/" className="hover:text-white transition-colors">Accueil</Link>
               <span>/</span>
               <Link href="/partenaire" className="hover:text-white transition-colors">Partenaires</Link>
               <span>/</span>
-              <span className="text-white/70">Sun Siyam Resorts</span>
+              <span className="text-white">Sun Siyam Resorts</span>
             </div>
           </Reveal>
 
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            {/* LEFT */}
             <div className="md:col-span-7 space-y-8">
               <Reveal delay={0.2}>
                 <h1 className="text-4xl md:text-5xl font-light tracking-wide text-white">
@@ -55,7 +55,7 @@ export default function SunSiyamPage() {
 
               <Reveal delay={0.3}>
                 <blockquote className="border-l-2 border-[#C9A96E] pl-6 py-2">
-                  <p className="text-xl md:text-2xl italic text-white/90 leading-relaxed font-light">
+                  <p className="text-xl md:text-2xl italic text-white leading-relaxed font-light">
                     « Six resorts, trois collections, une seule exigence :
                     l'authenticité maldivienne pour chaque profil de clientèle. »
                   </p>
@@ -63,9 +63,9 @@ export default function SunSiyamPage() {
               </Reveal>
 
               <Reveal delay={0.4}>
-                <p className="text-lg text-white/70 leading-relaxed">
+                <p className="text-lg text-white leading-relaxed">
                   Du resort familial animé au sanctuaire intime sur pilotis, Sun Siyam
-                  propose une gamme complète aux professionnels du voyage — avec le
+                  propose une gamme complète aux professionnels du voyage - avec le
                   soutien de terrain d'ARMH Consulting pour identifier et vendre le
                   bon resort au bon client.
                 </p>
@@ -88,7 +88,6 @@ export default function SunSiyamPage() {
               </Reveal>
             </div>
 
-            {/* RIGHT – Stats glass card */}
             <div className="md:col-span-5 flex flex-col gap-4">
               <Reveal delay={0.2}>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl divide-y divide-white/10">
@@ -114,11 +113,101 @@ export default function SunSiyamPage() {
             </div>
           </div>
         </Container>
-      </Section>
+      </Section> */}
+
+
+      <section className="relative py-32 min-h-150">
+        {/* Carousel + parallax */}
+        <HeroCarousel />
+
+        {/* Contenu — identique à avant */}
+        <Container className="relative z-10">
+          <Reveal delay={0.1}>
+            <div className="flex items-center gap-3 text-sm text-white mb-12">
+              <Link href="/" className="hover:text-white transition-colors">Accueil</Link>
+              <span>/</span>
+              <Link href="/partenaire" className="hover:text-white transition-colors">Partenaires</Link>
+              <span>/</span>
+              <span className="text-white">Sun Siyam Resorts</span>
+            </div>
+          </Reveal>
+
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            {/* LEFT */}
+            <div className="md:col-span-7 space-y-8">
+              <Reveal delay={0.2}>
+                <h1 className="text-4xl md:text-5xl font-light tracking-wide text-white">
+                  Sun Siyam{" "}
+                  <span className="font-semibold text-[#C9A96E]">Resorts</span>
+                </h1>
+                <p className="text-lg text-white mt-2 font-medium uppercase tracking-wide">
+                  Maldives · Sri Lanka
+                </p>
+              </Reveal>
+
+              <Reveal delay={0.3}>
+                <blockquote className="border-l-2 border-[#C9A96E] pl-6 py-2">
+                  <p className="text-xl md:text-2xl italic text-white leading-relaxed font-light">
+                    « Six resorts, trois collections, une seule exigence :
+                    l'authenticité maldivienne pour chaque profil de clientèle. »
+                  </p>
+                </blockquote>
+              </Reveal>
+
+              <Reveal delay={0.4}>
+                <p className="text-lg text-white leading-relaxed">
+                  Du resort familial animé au sanctuaire intime sur pilotis, Sun Siyam
+                  propose une gamme complète aux professionnels du voyage - avec le
+                  soutien de terrain d'ARMH Consulting pour identifier et vendre le
+                  bon resort au bon client.
+                </p>
+              </Reveal>
+
+              <Reveal delay={0.5}>
+                <div className="flex flex-wrap gap-4">
+                  <ButtonCTA href="#kit-pro" variant="primary">
+                    Demander le Kit Pro
+                  </ButtonCTA>
+                  
+                  <a  href="https://www.sunsiyam.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-[#C9A96E]/50 text-[#C9A96E] text-sm font-medium hover:bg-[#C9A96E]/10 transition-all"
+                  >
+                    Voir sunsiyam.com ↗
+                  </a>
+                </div>
+              </Reveal>
+            </div>
+
+            {/* RIGHT */}
+            <div className="md:col-span-5 flex flex-col gap-4">
+              <Reveal delay={0.2}>
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl divide-y divide-white/10">
+                  <StatBadge icon={<Building2 size={20} strokeWidth={1.5} />} value="6" label="Resorts" />
+                  <StatBadge icon={<Layers size={20} strokeWidth={1.5} />} value="3" label="Collections" />
+                  <StatBadge icon={<Globe size={20} strokeWidth={1.5} />} value="2" label="Destinations" />
+                  <StatBadge icon={<ShieldCheck size={20} strokeWidth={1.5} />} value="FR" label="Représentation officielle" />
+                </div>
+              </Reveal>
+
+              <Reveal delay={0.3}>
+                <div className="flex flex-wrap gap-2">
+                  {["Luxury Collection", "Privé Collection", "Lifestyle Collection"].map((c, i) => (
+                    <span key={i} className="text-xs font-medium px-3 py-1.5 rounded-full bg-[#C9A96E]/20 text-[#C9A96E] border border-[#C9A96E]/30">
+                      {c}
+                    </span>
+                  ))}
+                </div>
+              </Reveal>
+            </div>
+          </div>
+        </Container>
+      </section>
 
       {/* ── 2. POUR QUI – AUDIENCE ────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/others/img5.webp"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/audience.jpg"
         overlay
         className="py-20"
       >
@@ -139,7 +228,7 @@ export default function SunSiyamPage() {
               </div>
               <div className="md:col-span-7">
                 <Reveal delay={0.2}>
-                  <p className="text-base text-white/70 leading-relaxed">
+                  <p className="text-base text-white/90 leading-relaxed">
                     ARMH Consulting structure son accompagnement autour de trois types
                     de partenaires B2B - agences de voyages, tours opérateurs et
                     acteurs du MICE.
@@ -159,7 +248,7 @@ export default function SunSiyamPage() {
 
       {/* ── 3. QUEL RESORT POUR QUEL CLIENT ───────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/others/bg_image_principale.webp"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/ressort.jpg"
         overlay
         className="py-24"
       >
@@ -180,7 +269,7 @@ export default function SunSiyamPage() {
               </div>
               <div className="md:col-span-7">
                 <Reveal delay={0.2}>
-                  <p className="text-base text-white/75 leading-relaxed">
+                  <p className="text-base text-white/90 leading-relaxed">
                     Un outil de prescription pour orienter rapidement vos clients vers
                     l'expérience la plus pertinente. Six établissements, trois lignes
                     éditoriales claires.
@@ -200,7 +289,7 @@ export default function SunSiyamPage() {
 
       {/* ── 4. HOTELS GRID ────────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/others/img5.webp"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/hotels.jpg"
         overlay
         className="py-24"
         id="hotels"
@@ -212,7 +301,7 @@ export default function SunSiyamPage() {
 
       {/* ── 5. ESG ────────────────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/others/bg_image_principale.webp"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-3.jpg"
         overlay
         className="py-24"
       >
@@ -230,7 +319,7 @@ export default function SunSiyamPage() {
                 </h2>
               </Reveal>
               <Reveal delay={0.2}>
-                <p className="text-base text-white/80 leading-relaxed">
+                <p className="text-base text-white/90 leading-relaxed">
                   Sun Siyam Care permet de mettre en actions l'ESG : réduction des
                   déchets et plastiques, énergies solaires, biodiversité, soutien aux
                   communautés locales, préservation culturelle et gestion raisonnée
@@ -243,9 +332,11 @@ export default function SunSiyamPage() {
               <div className="grid grid-cols-3 gap-4">
                 {ESG_PILLARS.map((pillar, i) => (
                   <Reveal key={i} delay={i * 0.05}>
-                    <div className="text-white/80 backdrop-blur-sm border border-white/20 rounded-xl p-4 text-center space-y-2 hover:bg-white/15 transition-colors">
-                      <div className="text-2xl">{pillar.icon}</div>
-                      <p className="text-xs text-white/80 font-medium leading-tight">
+                    <div className="bg-white/10 border border-white/20 rounded-2xl p-5 flex flex-col items-start gap-3 h-full hover:bg-white/15 transition-colors backdrop-blur-sm">
+                      <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center text-xl shrink-0">
+                        {pillar.icon}
+                      </div>
+                      <p className="text-sm text-white font-medium leading-snug">
                         {pillar.label}
                       </p>
                     </div>
@@ -259,7 +350,7 @@ export default function SunSiyamPage() {
 
       {/* ── 6. KIT PRO + FORM ─────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/others/img5.webp"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-2.jpg"
         overlay
         className="py-24"
         id="kit-pro"
@@ -280,7 +371,7 @@ export default function SunSiyamPage() {
                   </h2>
                 </Reveal>
                 <Reveal delay={0.2}>
-                  <p className="text-base text-white/70 leading-relaxed">
+                  <p className="text-base text-white/90 leading-relaxed">
                     ARMH Consulting met à disposition des agences et TO un Kit Pro
                     complet : comparatif des six hôtels, arguments de vente par profil
                     de clientèle, idées de combinés et support de formation.
@@ -329,7 +420,7 @@ export default function SunSiyamPage() {
                 </h2>
               </Reveal>
               <Reveal delay={0.1}>
-                <p className="text-base text-white/55">
+                <p className="text-base text-white/90">
                   Un relais francophone pour transformer l'intérêt en ventes.
                 </p>
               </Reveal>
@@ -340,10 +431,12 @@ export default function SunSiyamPage() {
                 {WHY_ARMH.map((item, i) => (
                   <div
                     key={i}
-                    className="text-white/80 backdrop-blur-sm border border-white/20 rounded-xl p-5 flex flex-col items-center gap-3 text-center hover:bg-white/15 transition-colors"
+                    className="bg-white/10 border border-white/20 rounded-2xl p-5 flex flex-col items-start gap-3 h-full hover:bg-white/15 transition-colors backdrop-blur-sm"
                   >
-                    <span className="text-2xl">{item.icon}</span>
-                    <p className="text-xs text-white/75 font-medium leading-snug">
+                    <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center text-xl shrink-0">
+                      {item.icon}
+                    </div>
+                    <p className="text-sm text-white font-medium leading-snug">
                       {item.label}
                     </p>
                   </div>
@@ -354,7 +447,7 @@ export default function SunSiyamPage() {
             <Reveal delay={0.3}>
               <div className="flex justify-center pt-2">
                 <ButtonCTA href="/contact" variant="primary">
-                  Contacter ARMH Consulting
+                  Être rappelé <ArrowRightCircleIcon className="w-4 h-4 ml-2" />
                 </ButtonCTA>
               </div>
             </Reveal>
@@ -376,7 +469,7 @@ export default function SunSiyamPage() {
               </h2>
             </Reveal>
             <Reveal delay={0.2}>
-              <p className="text-lg text-white/80 leading-relaxed">
+              <p className="text-lg text-white/90 leading-relaxed">
                 Lunas de miel, familles, clients luxe ou combinés Sri Lanka —
                 ARMH Consulting vous accompagne pour construire une offre
                 cohérente, différenciante et parfaitement argumentée.

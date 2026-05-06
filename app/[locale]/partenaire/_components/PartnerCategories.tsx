@@ -16,15 +16,15 @@ const categories: Category[] = [
     description: "Offices de tourisme, CRT, ministères, organisations nationales…",
   },
   {
-    slug: "hotels",
+    slug: "sun-siyam",
     title: "Hôtels et Groupes hôteliers",
     description: "",
   },
-  {
-    slug: "sun-siyam",
-    title: "Sun Siyam Resorts",
-    description: "6 resorts aux Maldives et au Sri Lanka — Luxury, Privé & Lifestyle Collection",
-  },
+  // {
+  //   slug: "sun-siyam",
+  //   title: "Sun Siyam Resorts",
+  //   description: "6 resorts aux Maldives et au Sri Lanka — Luxury, Privé & Lifestyle Collection",
+  // },
   {
     slug: "dmc",
     title: "DMC & Prestataires locaux",
@@ -64,7 +64,7 @@ export default function PartnerCategories() {
 
             {/* Description optionnelle */}
             {cat.description && (
-              <p className="text-white/55 text-sm mt-2 leading-relaxed">
+              <p className="text-white/90 text-base font-medium mt-2 ">
                 {cat.description}
               </p>
             )}

@@ -15,8 +15,8 @@ export default function AudienceCard({ card }: Props) {
           {card.icon}
         </div>
         <div>
-          <h4 className="font-semibold text-[#1a3a32] mb-1">{card.title}</h4>
-          <p className="text-sm text-[#1a3a32]/70 leading-relaxed">{card.description}</p>
+          <h4 className="font-semibold text-black mb-1">{card.title}</h4>
+          <p className="text-sm text-black/70 font-medium">{card.description}</p>
         </div>
       </div>
     </Reveal>
