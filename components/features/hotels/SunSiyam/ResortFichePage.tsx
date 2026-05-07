@@ -75,16 +75,16 @@ function ExperienceCard({ image, title, description }: { image: string; title: s
 
 function AutreResortCard({ resort }: { resort: ResortFicheData["autresResorts"][0] }) {
   return (
-    <div className="flex gap-4 items-start bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-4 hover:bg-white/15 transition-colors">
+    <div className="flex gap-4 h-full items-start bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-4 hover:bg-white/15 transition-colors">
       <div className="relative w-28 h-20 rounded-xl overflow-hidden shrink-0">
         <Image src={resort.image} alt={resort.name} fill className="object-cover" />
       </div>
       <div className="flex flex-col gap-2 flex-1 min-w-0">
-        <p className="font-semibold text-white text-sm leading-snug">{resort.name}</p>
-        <p className="text-xs text-white/55 leading-relaxed">{resort.tagline}</p>
+        <p className="font-semibold text-white text-base leading-snug">{resort.name}</p>
+        <p className="text-sm text-white/90 leading-relaxed">{resort.tagline}</p>
         <Link
           href={`/partenaires/sun-siyam/${resort.slug}`}
-          className="text-xs font-medium text-[#C9A96E] hover:text-white transition-colors"
+          className="text-base font-medium text-[#C9A96E] hover:text-white transition-colors"
         >
           Voir la fiche →
         </Link>
@@ -184,7 +184,7 @@ export default function ResortFichePage({ data }: Props) {
         <Container>
           <Reveal>
             <h2 className="text-2xl md:text-3xl font-semibold text-white text-center mb-20">
-              À vendre à
+              Cibles à haute valeur
             </h2>
           </Reveal>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
@@ -203,7 +203,7 @@ export default function ResortFichePage({ data }: Props) {
         <Container>
           <Reveal>
             <h2 className="text-2xl md:text-3xl font-semibold text-white text-center mb-12">
-              Pourquoi ça vend
+              Ce qui crée la valeur
             </h2>
           </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
@@ -220,8 +220,8 @@ export default function ResortFichePage({ data }: Props) {
       <Section backgroundImage="/assets/images/others/bg_image_principale.webp" overlay className="py-3">
         <Container>
           <Reveal>
-            <h2 className="text-xl md:text-2xl font-semibold text-white text-center mb-20">
-              Les preuves à mettre en avant
+            <h2 className="text-2xl md:text-3xl font-semibold text-white text-center mb-20">
+              Atouts à valoriser
             </h2>
           </Reveal>
           <Reveal delay={0.1}>

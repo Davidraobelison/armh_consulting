@@ -177,9 +177,9 @@ export default function SunSiyamPage() {
                   <a  href="https://www.sunsiyam.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-[#C9A96E]/50 text-[#C9A96E] text-sm font-medium hover:bg-[#C9A96E]/10 transition-all"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-white/90 text-white text-base font-medium hover:bg-[#C9A96E]/10 transition-all"
                   >
-                    Voir sunsiyam.com ↗
+                    Voir le site Sunsiyam.com ↗
                   </a>
                 </div>
               </Reveal>
@@ -341,7 +341,7 @@ export default function SunSiyamPage() {
                       <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center text-xl shrink-0">
                         {pillar.icon}
                       </div>
-                      <p className="text-sm text-white font-medium leading-snug">
+                      <p className="text-base text-white font-medium leading-snug">
                         {pillar.label}
                       </p>
                     </div>
@@ -398,7 +398,7 @@ export default function SunSiyamPage() {
                       className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 flex flex-col items-center gap-2 text-center"
                     >
                       <span className="text-2xl">{item.icon}</span>
-                      <p className="text-xs text-white/80 font-medium leading-tight">
+                      <p className="text-base text-white/90 font-medium leading-tight">
                         {item.label}
                       </p>
                     </div>

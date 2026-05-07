@@ -90,7 +90,7 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
     ],
     arguments: [
       { icon: ic(Gem), title: "Promesse claire", description: "Ici, l'ennui n'existe pas. Le resort le plus complet des Maldives pour tous les âges et tous les profils." },
-      { icon: ic(Sparkles), title: "Effet waouh immédiat", description: "Du toboggan privé à la plus grande piscine d'Asie, chaque instant est un souvenir." },
+      { icon: ic(Sparkles), title: "Une signature visuelle forte", description: "Du toboggan privé à la plus grande piscine d'Asie, chaque instant est un souvenir." },
       { icon: ic(LayoutGrid), title: "Grande variété", description: "Activités terrestres, marines, lifestyle et gastronomie : chacun y trouve son kiff." },
     ],
     preuves: [
@@ -102,7 +102,7 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(Car), label: "Go-kart et expériences lifestyle" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/water-villa-with-pool-slide.jpg", title: "Water Villa with Pool + Slide", description: "Plongez depuis votre terrasse et amusez-vous en un clin d'œil." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/water-villa-with-pool-slide.jpg", title: "Villa sur pilotis avec toboggan privatif", description: "Plongez depuis votre terrasse et amusez-vous en un clin d'œil." },
       { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/SW-Waterworld-final.jpg", title: "Siyam Water World", description: "Le plus grand parc aquatique flottant des Maldives." },
       { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/sw-horse-ranch.jpg", title: "Horse Ranch", description: "Équitation, balades au coucher du soleil et moments uniques." },
       { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/sw-go-cart.jpg", title: "Go-Kart", description: "Adrénaline sur circuit au cœur de l'île." },
@@ -160,15 +160,15 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(Flower2), label: "Spa primé dans la jungle" },
       { icon: ic(Waves), label: "Grand centre de plongée" },
       { icon: ic(Heart), label: "Couples et familles" },
-      { icon: ic(Users2), label: "Butlers multilingues" },
+      { icon: ic(Users2), label: "Majordomes multilingues dédiés" },
       { icon: ic(Home), label: "Villas spacieuses" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/premium-islander.jpg", title: "Premium Island Indulgence", description: "Vivez l'essence d'Iru Fushi : luxe discret, service sur-mesure et nature préservée." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/jungle-spa.jpg", title: "Jungle Spa", description: "Soins holistiques dans un cadre tropical apaisant pour un lâcher-prise total." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/nemo-ref.jpg", title: "Nemo Reef", description: "Snorkeling exceptionnel sur le récif maison peuplé de poissons tropicaux." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/water-villa.jpg", title: "Water Villas", description: "Villas sur pilotis avec piscine privée et accès direct au lagon turquoise." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/Family-Beach-Villa.jpg", title: "Family Deluxe Beach Villa", description: "Espaces généreux en bord de plage, parfaits pour les familles en quête de confort." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/premium-islander.jpg", title: "Expérience insulaire d’exception", description: "Vivez l'essence d'Iru Fushi : luxe discret, service sur-mesure et nature préservée." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/jungle-spa.jpg", title: "Expérience spa en écrin naturel", description: "Soins holistiques dans un cadre tropical apaisant pour un lâcher-prise total." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/nemo-ref.jpg", title: "Immersion au cœur du récif Nemo", description: "Snorkeling exceptionnel sur le récif, maison peuplé de poissons tropicaux." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/water-villa.jpg", title: "Villas d'exception sur pilotis", description: "Villas sur pilotis avec piscine privée et accès direct au lagon turquoise." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/Family-Beach-Villa.jpg", title: "Villa familiale d’exception en bord de mer", description: "Espaces généreux en bord de plage, parfaits pour les familles en quête de confort." },
       { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/moment-signature.jpg", title: "Moments signature", description: "Dîners privés, croisières au coucher du soleil et instants inoubliables à deux ou en famille." },
     ],
     argumentAgence: {
