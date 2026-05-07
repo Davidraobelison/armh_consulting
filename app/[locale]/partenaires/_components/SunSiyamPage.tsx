@@ -165,10 +165,15 @@ export default function SunSiyamPage() {
 
               <Reveal delay={0.5}>
                 <div className="flex flex-wrap gap-4">
-                  <ButtonCTA href="#kit-pro" variant="primary">
+                  <ButtonCTA href="/partenaires/sun-siyam/kit-pro" variant="primary">
                     Demander le Kit Pro
                   </ButtonCTA>
-                  
+                  <Link
+                    href="/partenaires/sun-siyam/formation"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-white/40 text-white text-sm font-medium hover:bg-white/10 transition-all"
+                  >
+                    Formation agences →
+                  </Link>
                   <a  href="https://www.sunsiyam.com"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -376,6 +381,12 @@ export default function SunSiyamPage() {
                     complet : comparatif des six hôtels, arguments de vente par profil
                     de clientèle, idées de combinés et support de formation.
                   </p>
+                  <Link
+                    href="/partenaires/sun-siyam/kit-pro"
+                    className="inline-flex items-center gap-1.5 mt-4 text-sm text-[#C9A96E] underline underline-offset-4 hover:text-white transition-colors"
+                  >
+                    Voir la page dédiée Kit Pro →
+                  </Link>
                 </Reveal>
               </div>
 

@@ -205,14 +205,6 @@ export default function BBVoyagePartnerPage() {
               {/* LEFT – Quote + Badge */}
               <div className="md:col-span-7 space-y-8">
                 {/* ARMH Header */}
-                <Reveal>
-                  <div className="flex items-center gap-3">
-                    <span className="w-1 h-[2px] bg-blue-400" />
-                    <p className="text-lg font-semibold text-blue-300 uppercase">
-                      ARMH Consulting - Partenaire de représentation France
-                    </p>
-                  </div>
-                </Reveal>
 
                 {/* Title */}
                 <Reveal delay={0.1}>

@@ -224,11 +224,11 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(UtensilsCrossed), label: "Private dining" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", title: "Beach Villa with Pool", description: "À quelques pas du sable blanc et du lagon." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", title: "Ocean Villa with Pool", description: "Sur pilotis, avec accès direct au lagon turquoise." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", title: "Dolphin Ocean Villa", description: "Admirez les dauphins depuis votre terrasse privée." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", title: "Sunset experiences", description: "Couchers de soleil inoubliables, chaque soir." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", title: "Private dining", description: "Dîners exclusifs où vous voulez, quand vous voulez." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/5.jpeg", title: "Beach Villa with Pool", description: "À quelques pas du sable blanc et du lagon." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/4.jpeg", title: "Ocean Villa with Pool", description: "Sur pilotis, avec accès direct au lagon turquoise." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/3.jpeg", title: "Dolphin Ocean Villa", description: "Admirez les dauphins depuis votre terrasse privée." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/1.jpeg", title: "Sunset experiences", description: "Couchers de soleil inoubliables, chaque soir." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/2.jpeg", title: "Private dining", description: "Dîners exclusifs où vous voulez, quand vous voulez." },
       { image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", title: "Service signature", description: "Des attentions délicates qui font toute la différence." },
     ],
     argumentAgence: {
