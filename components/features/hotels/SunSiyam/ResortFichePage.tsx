@@ -330,7 +330,7 @@ export default function ResortFichePage({ data }: Props) {
             <div className="flex justify-center">
               <Link
                 href="/partenaires/sun-siyam"
-                className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-medium px-6 py-3 rounded-xl hover:bg-white/20 transition-colors"
+                className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white text-base font-medium px-6 py-3 rounded-xl hover:bg-white/20 transition-colors"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A96E" strokeWidth="1.5">
                   <circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 000 20M2 12h20" />
@@ -347,7 +347,7 @@ export default function ResortFichePage({ data }: Props) {
         <Container>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
             {data.footerBadges.map((badge, i) => (
-              <div key={i} className="flex items-center gap-2 text-white/90 text-sm">
+              <div key={i} className="flex items-center gap-2 text-white text-base">
                 <span className="w-1 h-1 rounded-full bg-[#C9A96E] shrink-0" />
                 {badge}
               </div>
