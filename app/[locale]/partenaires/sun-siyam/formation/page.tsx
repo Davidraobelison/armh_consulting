@@ -161,7 +161,7 @@ export default function FormationPage() {
                 </h1>
               </Reveal>
               <Reveal delay={0.3}>
-                <p className="text-sm text-white/75 leading-relaxed">
+                <p className="text-base text-white/90 leading-relaxed">
                   Cette page s'adresse aux agences, réseaux, TO et équipes
                   commerciales. Des formats courts, concrets et 100% utiles pour
                   mieux connaître la collection, matcher vos clients et augmenter
@@ -254,10 +254,10 @@ export default function FormationPage() {
                     <div className="w-10 h-10 rounded-full bg-[#C9A96E]/20 border border-[#C9A96E]/50 flex items-center justify-center text-[#C9A96E] font-bold text-sm">
                       {step.num}
                     </div>
-                    <p className="text-sm font-semibold text-white">
+                    <p className="text-base font-semibold text-white">
                       {step.title}
                     </p>
-                    <p className="text-xs text-white/60 leading-relaxed">
+                    <p className="text-sm text-white/90 leading-relaxed">
                       {step.desc}
                     </p>
                   </div>
@@ -294,15 +294,15 @@ export default function FormationPage() {
                     <div className="w-11 h-11 rounded-full bg-[#C9A96E]/20 border border-[#C9A96E]/40 flex items-center justify-center text-[#C9A96E]">
                       {f.icon}
                     </div>
-                    <p className="text-sm font-semibold text-white">
+                    <p className="text-base font-semibold text-white">
                       {f.title}
                     </p>
-                    <p className="text-xs text-white/60 leading-relaxed flex-1">
+                    <p className="text-sm text-white/90 leading-relaxed flex-1">
                       {f.desc}
                     </p>
                     <Link
                       href="#planifier"
-                      className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#C9A96E] hover:text-white transition-colors"
+                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#C9A96E] hover:text-white transition-colors"
                     >
                       En savoir plus <ArrowRight size={11} />
                     </Link>
@@ -343,7 +343,7 @@ export default function FormationPage() {
                     <p className="text-base font-semibold text-white">
                       {p.title}
                     </p>
-                    <p className="text-sm text-white/65 leading-relaxed">
+                    <p className="text-sm text-white/90 leading-relaxed">
                       {p.desc}
                     </p>
                   </div>
@@ -366,10 +366,10 @@ export default function FormationPage() {
             {/* LEFT – Form */}
             <div className="md:col-span-7">
               <Reveal>
-                <h2 className="text-2xl md:text-3xl font-semibold text-white mb-1">
+                <h2 className="text-2xl md:text-3xl font-semibold text-white mb-4">
                   Planifier une formation
                 </h2>
-                <p className="text-sm text-white/55 mb-6">
+                <p className="text-base text-white/90 mb-6">
                   Remplissez le formulaire ci-dessous, nous vous proposerons
                   rapidement des créneaux adaptés à votre équipe.
                 </p>
@@ -384,7 +384,7 @@ export default function FormationPage() {
             {/* RIGHT – Process */}
             <div className="md:col-span-5 space-y-6 pt-12">
               <Reveal>
-                <p className="text-sm font-semibold text-[#C9A96E] uppercase tracking-widest">
+                <p className="text-base font-semibold text-[#C9A96E] uppercase tracking-widest">
                   Comment ça marche
                 </p>
               </Reveal>
@@ -394,7 +394,7 @@ export default function FormationPage() {
                     <div className="w-9 h-9 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white shrink-0">
                       {s.icon}
                     </div>
-                    <p className="text-sm text-white/75 leading-relaxed pt-1.5">
+                    <p className="text-base text-white/90 leading-relaxed pt-1.5">
                       {s.text}
                     </p>
                   </div>
@@ -417,10 +417,10 @@ export default function FormationPage() {
               {ESG_PILLARS.map((p, i) => (
                 <Reveal key={i} delay={i * 0.05}>
                   <div className="flex flex-col items-center gap-2 text-center">
-                    <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white">
+                    <div className="w-15 h-15 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white">
                       {p.icon}
                     </div>
-                    <p className="text-xs text-white/55">{p.label}</p>
+                    <p className="text-base text-white/90">{p.label}</p>
                   </div>
                 </Reveal>
               ))}
@@ -442,7 +442,7 @@ export default function FormationPage() {
                 <h2 className="text-xl md:text-2xl font-semibold text-white leading-snug">
                   Recevoir le Kit Pro Sun Siyam en français
                 </h2>
-                <p className="text-sm text-white/65 mt-2 leading-relaxed">
+                <p className="text-base text-white/90 mt-2 leading-relaxed">
                   Comparatifs des hôtels, profils clients, arguments de vente,
                   idées de combinés et conseils marché francophone.
                 </p>
@@ -454,10 +454,10 @@ export default function FormationPage() {
                       key={i}
                       className="bg-white/10 border border-white/20 rounded-xl p-3 flex flex-col items-center gap-2 text-center"
                     >
-                      <span className="[&>svg]:w-5 [&>svg]:h-5 text-[#C9A96E]">
+                      <span className="[&>svg]:w-10 [&>svg]:h-10 text-[#C9A96E]">
                         {item.icon}
                       </span>
-                      <p className="text-[11px] text-white/75 font-medium leading-tight">
+                      <p className="text-sm text-white/90 font-medium leading-tight">
                         {item.label}
                       </p>
                     </div>
@@ -483,7 +483,7 @@ export default function FormationPage() {
         <Container>
           <div className="max-w-5xl mx-auto">
             <Reveal>
-              <p className="text-center text-sm text-white/40 uppercase tracking-widest mb-8">
+              <p className="text-center text-base text-white/90 uppercase tracking-widest mb-8">
                 Pourquoi ARMH ? Une vraie transparence. Des arguments factuels et vérifiés.
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -495,7 +495,7 @@ export default function FormationPage() {
                     <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-white">
                       {item.icon}
                     </div>
-                    <p className="text-xs text-white/55 leading-snug">
+                    <p className="text-base text-white/90 leading-snug">
                       {item.label}
                     </p>
                   </div>
@@ -510,10 +510,10 @@ export default function FormationPage() {
       <div className="bg-[#0d2420] border-t border-[#C9A96E]/30 py-3.5 px-6">
         <div className="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-4">
           <div>
-            <p className="text-white text-sm font-semibold">
+            <p className="text-white text-base font-semibold">
               ARMH Consulting × Sun Siyam Resorts
             </p>
-            <p className="text-white/40 text-xs">
+            <p className="text-white/90 text-base">
               Le support de vente en français pour les professionnels
             </p>
           </div>

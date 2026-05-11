@@ -27,7 +27,7 @@ export function WelcomePartnerEmail({ nom, typePartenariat }: WelcomePartnerEmai
       <Head />
       <Tailwind>
         <Body className="bg-[#eaf2fb] font-sans">
-          <Preview>ARMH Consulting — Votre demande de partenariat a bien été reçue</Preview>
+          <Preview>ARMH Consulting - Votre demande de partenariat a bien été reçue</Preview>
 
           <Container className="mx-auto py-8 px-4 max-w-[600px]">
 

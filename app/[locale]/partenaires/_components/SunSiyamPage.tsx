@@ -334,7 +334,7 @@ export default function SunSiyamPage() {
             </div>
 
             <div className="md:col-span-7">
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {ESG_PILLARS.map((pillar, i) => (
                   <Reveal key={i} delay={i * 0.05}>
                     <div className="bg-white/10 border border-white/20 rounded-2xl p-5 flex flex-col items-start gap-3 h-full hover:bg-white/15 transition-colors backdrop-blur-sm">
@@ -481,7 +481,7 @@ export default function SunSiyamPage() {
             </Reveal>
             <Reveal delay={0.2}>
               <p className="text-lg text-white/90 leading-relaxed">
-                Lunas de miel, familles, clients luxe ou combinés Sri Lanka —
+                Lunas de miel, familles, clients luxe ou combinés Sri Lanka -
                 ARMH Consulting vous accompagne pour construire une offre
                 cohérente, différenciante et parfaitement argumentée.
               </p>

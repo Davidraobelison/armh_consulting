@@ -15,7 +15,7 @@ export default function ContactUsForm() {
     objet: "",
     provenance: "",
     message: "",
-    website: "", // honeypot — must stay empty
+    website: "", // honeypot - must stay empty
   });
 
   const handleChange = (
@@ -95,7 +95,7 @@ export default function ContactUsForm() {
 
       <form onSubmit={handleSubmit} className="px-8 py-8 space-y-6">
 
-        {/* Honeypot anti-bot — hidden from users */}
+        {/* Honeypot anti-bot - hidden from users */}
         <div aria-hidden="true" style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
           <label htmlFor="website">Website</label>
           <input
@@ -109,7 +109,7 @@ export default function ContactUsForm() {
           />
         </div>
 
-        {/* Row 1 — Nom + Entreprise */}
+        {/* Row 1 - Nom + Entreprise */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="flex flex-col">
             <label className={labelClass}>Nom et prénom</label>
@@ -140,7 +140,7 @@ export default function ContactUsForm() {
           </div>
         </div>
 
-        {/* Row 2 — Email + Objet */}
+        {/* Row 2 - Email + Objet */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="flex flex-col">
             <label className={labelClass}>Email</label>
@@ -164,7 +164,7 @@ export default function ContactUsForm() {
                 required
                 className={selectClass}
               >
-                <option value="" className="bg-gray-900">— Sélectionnez un objet —</option>
+                <option value="" className="bg-gray-900">- Sélectionnez un objet -</option>
                 <option value="information" className="bg-gray-900">Demande d&apos;information</option>
                 <option value="collaboration" className="bg-gray-900">Projet de collaboration</option>
                 <option value="partenariat" className="bg-gray-900">Partenariat</option>
@@ -177,7 +177,7 @@ export default function ContactUsForm() {
           </div>
         </div>
 
-        {/* Row 3 — Provenance full width */}
+        {/* Row 3 - Provenance full width */}
         <div className="flex flex-col">
           <label className={labelClass}>Comment avez-vous connu ARMH Consulting ?</label>
           <div className="relative">
@@ -188,7 +188,7 @@ export default function ContactUsForm() {
               required
               className={selectClass}
             >
-              <option value="" className="bg-gray-900">— Sélectionnez une source —</option>
+              <option value="" className="bg-gray-900">- Sélectionnez une source -</option>
               <option value="google" className="bg-gray-900">Recherche Google</option>
               <option value="linkedin" className="bg-gray-900">LinkedIn</option>
               <option value="instagram" className="bg-gray-900">Instagram</option>
@@ -203,7 +203,7 @@ export default function ContactUsForm() {
           </div>
         </div>
 
-        {/* Row 4 — Message full width */}
+        {/* Row 4 - Message full width */}
         <div className="flex flex-col">
           <label className={labelClass}>Votre message</label>
           <textarea
