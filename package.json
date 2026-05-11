@@ -19,6 +19,7 @@
     "@vercel/speed-insights": "^2.0.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.26.2",
+    "glob": "^13.0.6",
     "gray-matter": "^4.0.3",
     "isomorphic-dompurify": "^2.35.0",
     "lucide-react": "^0.562.0",
@@ -34,6 +35,7 @@
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
     "resend": "^6.10.0",
+    "sharp": "^0.34.5",
     "tailwind-merge": "^3.5.0",
     "yup": "^1.7.1"
   },

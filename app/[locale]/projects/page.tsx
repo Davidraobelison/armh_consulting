@@ -10,31 +10,31 @@ export const generateMetadata = () =>
   });
 
 const formationPhotos = [
-  { src: "/assets/images/projects/formation/1.jpeg", caption: "Session de formation" },
-  { src: "/assets/images/projects/formation/2.jpeg", caption: "Workshop agents" },
+  { src: "/assets/images/projects/formation/1.webp", caption: "Session de formation" },
+  { src: "/assets/images/projects/formation/2.webp", caption: "Workshop agents" },
 ];
 
 const iftmPhotos = [
-  { src: "/assets/images/projects/iftm/1.jpeg",  caption: "Stand IFTM" },
-  { src: "/assets/images/projects/iftm/2.jpeg",  caption: "Rencontres B2B" },
-  { src: "/assets/images/projects/iftm/3.jpeg",  caption: "Espace partenaires" },
-  { src: "/assets/images/projects/iftm/4.jpeg",  caption: "Présentation presse" },
-  { src: "/assets/images/projects/iftm/5.jpeg",  caption: "Networking salon" },
-  { src: "/assets/images/projects/iftm/6.jpeg",  caption: "Table ronde" },
-  { src: "/assets/images/projects/iftm/7.jpeg",  caption: "Échanges professionnels" },
-  { src: "/assets/images/projects/iftm/8.jpeg",  caption: "Rencontres destinations" },
-  { src: "/assets/images/projects/iftm/9.jpeg",  caption: "Ateliers B2B" },
-  { src: "/assets/images/projects/iftm/10.jpeg", caption: "Conférence partenaires" },
-  { src: "/assets/images/projects/iftm/11.jpeg", caption: "Cocktail networking" },
-  { src: "/assets/images/projects/iftm/12.jpeg", caption: "Présentation produits" },
-  { src: "/assets/images/projects/iftm/13.jpeg", caption: "Espace presse" },
-  { src: "/assets/images/projects/iftm/14.jpeg", caption: "Clôture salon" },
+  { src: "/assets/images/projects/iftm/1.webp",  caption: "Stand IFTM" },
+  { src: "/assets/images/projects/iftm/2.webp",  caption: "Rencontres B2B" },
+  { src: "/assets/images/projects/iftm/3.webp",  caption: "Espace partenaires" },
+  { src: "/assets/images/projects/iftm/4.webp",  caption: "Présentation presse" },
+  { src: "/assets/images/projects/iftm/5.webp",  caption: "Networking salon" },
+  { src: "/assets/images/projects/iftm/6.webp",  caption: "Table ronde" },
+  { src: "/assets/images/projects/iftm/7.webp",  caption: "Échanges professionnels" },
+  { src: "/assets/images/projects/iftm/8.webp",  caption: "Rencontres destinations" },
+  { src: "/assets/images/projects/iftm/9.webp",  caption: "Ateliers B2B" },
+  { src: "/assets/images/projects/iftm/10.webp", caption: "Conférence partenaires" },
+  { src: "/assets/images/projects/iftm/11.webp", caption: "Cocktail networking" },
+  { src: "/assets/images/projects/iftm/12.webp", caption: "Présentation produits" },
+  { src: "/assets/images/projects/iftm/13.webp", caption: "Espace presse" },
+  { src: "/assets/images/projects/iftm/14.webp", caption: "Clôture salon" },
 ];
 
 const networkingPhotos = [
-  { src: "/assets/images/projects/networking/1.jpeg", caption: "Soirée networking" },
-  { src: "/assets/images/projects/networking/2.jpeg", caption: "Rencontres partenaires" },
-  { src: "/assets/images/projects/networking/3.jpeg", caption: "Échanges B2B" },
+  { src: "/assets/images/projects/networking/1.webp", caption: "Soirée networking" },
+  { src: "/assets/images/projects/networking/2.webp", caption: "Rencontres partenaires" },
+  { src: "/assets/images/projects/networking/3.webp", caption: "Échanges B2B" },
 ];
 
 export default function ProjectsPage() {

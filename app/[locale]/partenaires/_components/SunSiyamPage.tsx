@@ -26,7 +26,7 @@ export default function SunSiyamPage() {
     <>
       {/* ── 1. HERO ───────────────────────────────────────────────────────── */}
       {/* <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/hero-3.JPG"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/hero-3.webp"
         overlay
         className="py-32"
       >
@@ -212,7 +212,7 @@ export default function SunSiyamPage() {
 
       {/* ── 2. POUR QUI – AUDIENCE ────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/audience.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/audience.webp"
         overlay
         className="py-20"
       >
@@ -253,7 +253,7 @@ export default function SunSiyamPage() {
 
       {/* ── 3. QUEL RESORT POUR QUEL CLIENT ───────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/ressort.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/ressort.webp"
         overlay
         className="py-24"
       >
@@ -294,7 +294,7 @@ export default function SunSiyamPage() {
 
       {/* ── 4. HOTELS GRID ────────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/hotels.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/hotels.webp"
         overlay
         className="py-24"
         id="hotels"
@@ -306,7 +306,7 @@ export default function SunSiyamPage() {
 
       {/* ── 5. ESG ────────────────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-3.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-3.webp"
         overlay
         className="py-24"
       >
@@ -355,7 +355,7 @@ export default function SunSiyamPage() {
 
       {/* ── 6. KIT PRO + FORM ─────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-2.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-2.webp"
         overlay
         className="py-24"
         id="kit-pro"

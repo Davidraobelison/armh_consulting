@@ -220,7 +220,7 @@ export default function BBVoyagePartnerPage() {
 
                   <div className="flex items-center gap-3 mt-4">
                     <Image
-                    src="/assets/images/partenaires/logo/LOGO INDEX2.jpg"
+                    src="/assets/images/partenaires/logo/LOGO INDEX2.webp"
                     alt="Logo BBVoyage"
                     width={48}
                     height={48}
@@ -230,7 +230,7 @@ export default function BBVoyagePartnerPage() {
                     by
                     </span>
                     <Image
-                    src="/assets/images/partenaires/logo/BB Voyage Logo high res.JPG"
+                    src="/assets/images/partenaires/logo/BB Voyage Logo high res.webp"
                     alt="Logo IndeXperience"
                     width={48}
                     height={48}
@@ -286,7 +286,7 @@ export default function BBVoyagePartnerPage() {
                 <Reveal delay={0.2}>
                     <div className="relative w-full rounded-2xl overflow-hidden shadow-2xl">
                     <Image
-                        src="/assets/images/partenaires/DANSEUSE INDIENNE.jpg"
+                        src="/assets/images/partenaires/DANSEUSE INDIENNE.webp"
                         alt="Danseuse indienne"
                         width={480}
                         height={560}
@@ -299,7 +299,7 @@ export default function BBVoyagePartnerPage() {
                 <Reveal delay={0.4}>
                     <div className="flex items-center justify-center">
                     <Image
-                        src="/assets/images/partenaires/macaron-bb-voyage.png"
+                        src="/assets/images/partenaires/macaron-bb-voyage.webp"
                         alt="BBVoyage IndeXperience logo"
                         width={120}
                         height={120}
@@ -391,7 +391,7 @@ export default function BBVoyagePartnerPage() {
                 <Reveal delay={0.2}>
                     <div className="relative rounded-2xl overflow-hidden">
                     <Image
-                        src="/assets/images/partenaires/fete-en-inde.jpeg"
+                        src="/assets/images/partenaires/fete-en-inde.webp"
                         alt="Fête en Inde"
                         width={560}
                         height={480}
@@ -517,7 +517,7 @@ export default function BBVoyagePartnerPage() {
                 <div className="grid gap-6 md:grid-cols-2">
                     <div className="rounded-2xl overflow-hidden">
                         <Image
-                        src="/assets/images/partenaires/EXPERTE EXPLICATIONS BBVOYAGE PURE 2025.jpg"
+                        src="/assets/images/partenaires/EXPERTE EXPLICATIONS BBVOYAGE PURE 2025.webp"
                         alt="Véronique Narayana Swamy en réunion"
                         width={900}
                         height={400}
@@ -526,7 +526,7 @@ export default function BBVoyagePartnerPage() {
                     </div>       
                     <div className="rounded-2xl overflow-hidden">
                         <Image
-                        src="/assets/images/partenaires/Raghou.jpeg"
+                        src="/assets/images/partenaires/Raghou.webp"
                         alt="Véronique Narayana Swamy en réunion"
                         width={900}
                         height={400}
@@ -688,20 +688,20 @@ export default function BBVoyagePartnerPage() {
             {/* 3 Destination Photos */}
             <div className="grid gap-6 md:grid-cols-3">
               <DestinationCard
-                image="/assets/images/partenaires/fete-en-inde-2.jpeg"
+                image="/assets/images/partenaires/fete-en-inde-2.webp"
                 alt="Fête en Inde"
                 name="Inde"
                 description="Des villages, des maisons de caractère, des traditions vivantes, des adresses choisies pour leur âme plutôt que pour leur seule visibilité."
               />
               <DestinationCard
-                image="/assets/images/partenaires/femmes nepalaises.jpg"
+                image="/assets/images/partenaires/femmes nepalaises.webp"
                 alt="Femmes népalaises"
                 name="Népal"
                 description="Une lecture plus intime du pays, entre relief, culture et rencontres humaines, loin d'un imaginaire réduit à la haute performance trekking."
               />
               <DestinationCard
                 imageClassName="object-top"
-                image="/assets/images/partenaires/enfant Bhoutanais.jpg"
+                image="/assets/images/partenaires/enfant Bhoutanais.webp"
                 alt="Enfant bhoutanais"
                 name="Bhoutan"
                 description="Une destination rare, spirituelle et profondément préservée, à raconter avec nuance, sobriété et profondeur plutôt qu'avec des clichés d'altitude."
@@ -771,7 +771,7 @@ export default function BBVoyagePartnerPage() {
                 <Reveal delay={0.2}>
                   <div className="rounded-2xl overflow-hidden">
                     <Image
-                      src="/assets/images/partenaires/Comprendre inde.jpeg"
+                      src="/assets/images/partenaires/Comprendre inde.webp"
                       alt="Terrain Nepal"
                       width={560}
                       height={400}

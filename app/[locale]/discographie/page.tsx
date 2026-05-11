@@ -16,7 +16,7 @@ export default function Realisation() {
       <Hero
         title="NOS RÉALISATIONS"
         subtitle="Projets, collaborations & expériences terrain"
-        backgroundImage="/assets/images/realisation/hero.jpg"
+        backgroundImage="/assets/images/realisation/hero.webp"
       />
 
       {/* INTRO */}
