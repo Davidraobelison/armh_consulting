@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Image from "next/image";
 
 type SectionProps = {
   children: ReactNode;
@@ -6,6 +7,7 @@ type SectionProps = {
   id?: string;
   backgroundImage?: string;
   overlay?: boolean;
+  priority?: boolean;
 };
 
 export default function Section({
@@ -14,26 +16,27 @@ export default function Section({
   id,
   backgroundImage,
   overlay = false,
+  priority = false,
 }: SectionProps) {
   return (
     <section
       id={id}
       className={`relative py-20 ${className}`}
-      style={
-        backgroundImage
-          ? {
-              backgroundImage: `url(${backgroundImage})`,
-              backgroundSize: "cover",
-              backgroundPosition: "bottom",
-            }
-          : undefined
-      }
     >
-      {/* Overlay optionnel */}
+      {backgroundImage && (
+        <Image
+          src={backgroundImage}
+          alt=""
+          fill
+          priority={priority}
+          sizes="100vw"
+          quality={85}
+          className="object-cover object-bottom"
+        />
+      )}
       {backgroundImage && overlay && (
         <div className="absolute inset-0 bg-black/50" />
       )}
-      {/* Contenu */}
       <div className="relative z-10">
         {children}
       </div>

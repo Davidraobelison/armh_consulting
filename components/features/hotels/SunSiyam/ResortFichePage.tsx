@@ -62,6 +62,8 @@ function ExperienceCard({ image, title, description }: { image: string; title: s
           src={image}
           alt={title}
           fill
+          sizes="(max-width: 640px) 50vw, 20vw"
+          quality={80}
           className="object-cover hover:scale-105 transition-transform duration-700"
         />
       </div>
@@ -78,7 +80,7 @@ function AutreResortCard({ resort }: { resort: ResortFicheData["autresResorts"][
     <div className="flex flex-col h-full bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 overflow-hidden hover:bg-white/15 transition-colors">
       {/* Image pleine largeur en haut */}
       <div className="relative w-full h-56 shrink-0">
-        <Image src={resort.image} alt={resort.name} fill className="object-cover" />
+        <Image src={resort.image} alt={resort.name} fill sizes="(max-width: 640px) 100vw, 33vw" quality={80} className="object-cover" />
       </div>
 
       {/* Contenu avec bouton collé en bas */}
@@ -106,7 +108,7 @@ export default function ResortFichePage({ data }: Props) {
   return (
     <>
       {/* ── 1. HERO ──────────────────────────────────────────────────────── */}
-      <Section backgroundImage={data.heroImage} overlay className="py-32">
+      <Section backgroundImage={data.heroImage} overlay priority className="py-32">
         <Container>
           <Reveal>
             <Link
