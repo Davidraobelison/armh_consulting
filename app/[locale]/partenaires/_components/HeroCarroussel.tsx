@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const IMAGES = [
-  "/assets/images/partenaires/sun-siyam/hero/hero-1.JPG",
-  "/assets/images/partenaires/sun-siyam/hero/hero-2.JPG",
-  "/assets/images/partenaires/sun-siyam/hero/hero-4.JPG",
+  "/assets/images/partenaires/sun-siyam/hero/hero-1.jpg",
+  "/assets/images/partenaires/sun-siyam/hero/hero-2.jpg",
+  "/assets/images/partenaires/sun-siyam/hero/hero-4.jpg",
   "/assets/images/partenaires/sun-siyam/hero/hero-3.JPG",
 ];
 
