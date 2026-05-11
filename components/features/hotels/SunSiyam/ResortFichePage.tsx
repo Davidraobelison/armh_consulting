@@ -75,16 +75,21 @@ function ExperienceCard({ image, title, description }: { image: string; title: s
 
 function AutreResortCard({ resort }: { resort: ResortFicheData["autresResorts"][0] }) {
   return (
-    <div className="flex gap-4 h-full items-start bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-4 hover:bg-white/15 transition-colors">
-      <div className="relative w-28 h-20 rounded-xl overflow-hidden shrink-0">
+    <div className="flex flex-col h-full bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 overflow-hidden hover:bg-white/15 transition-colors">
+      {/* Image pleine largeur en haut */}
+      <div className="relative w-full h-56 shrink-0">
         <Image src={resort.image} alt={resort.name} fill className="object-cover" />
       </div>
-      <div className="flex flex-col gap-2 flex-1 min-w-0">
-        <p className="font-semibold text-white text-base leading-snug">{resort.name}</p>
-        <p className="text-sm text-white/90 leading-relaxed">{resort.tagline}</p>
+
+      {/* Contenu avec bouton collé en bas */}
+      <div className="flex flex-col justify-between flex-1 p-4 gap-2">
+        <div className="space-y-1">
+          <p className="font-semibold text-white text-base leading-snug">{resort.name}</p>
+          <p className="text-sm text-white/90 leading-relaxed">{resort.tagline}</p>
+        </div>
         <Link
           href={`/partenaires/sun-siyam/${resort.slug}`}
-          className="text-base font-medium text-[#C9A96E] hover:text-white transition-colors"
+          className="text-base font-medium text-[#C9A96E] hover:text-white transition-colors mt-2"
         >
           Voir la fiche →
         </Link>
