@@ -1,20 +1,19 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const IMAGES = [
-  "/assets/images/partenaires/sun-siyam/hero/hero-1.jpg",
-  "/assets/images/partenaires/sun-siyam/hero/hero-2.jpg",
-  "/assets/images/partenaires/sun-siyam/hero/hero-4.jpg",
-  "/assets/images/partenaires/sun-siyam/hero/hero-3.JPG",
+  "/assets/images/partenaires/sun-siyam/hero/hero-1.webp",
+  "/assets/images/partenaires/sun-siyam/hero/hero-2.webp",
+  "/assets/images/partenaires/sun-siyam/hero/hero-4.webp",
+  "/assets/images/partenaires/sun-siyam/hero/hero-3.webp",
 ];
 
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0);
   const [scrollY, setScrollY] = useState(0);
-  const ref = useRef<HTMLDivElement>(null);
 
-  // Carousel auto-play
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % IMAGES.length);
@@ -22,7 +21,6 @@ export default function HeroCarousel() {
     return () => clearInterval(interval);
   }, []);
 
-  // Parallax on scroll
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -30,7 +28,7 @@ export default function HeroCarousel() {
   }, []);
 
   return (
-    <div ref={ref} className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden">
       {IMAGES.map((src, i) => (
         <div
           key={src}
@@ -38,13 +36,23 @@ export default function HeroCarousel() {
           style={{ opacity: i === current ? 1 : 0 }}
         >
           <div
-            className="absolute inset-[-10%] bg-cover bg-center"
+            className="absolute inset-[-10%]"
             style={{
-              backgroundImage: `url(${src})`,
               transform: `translateY(${scrollY * 0.3}px)`,
               transition: "transform 0.1s linear",
             }}
-          />
+          >
+            <Image
+              src={src}
+              alt=""
+              fill
+              className="object-cover object-center"
+              priority={i === 0}        // ← seulement la 1ère charge en priorité
+              loading={i === 0 ? "eager" : "lazy"}  // ← les autres en lazy
+              sizes="100vw"
+              quality={80}
+            />
+          </div>
         </div>
       ))}
 

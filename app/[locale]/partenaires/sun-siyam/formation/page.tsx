@@ -115,7 +115,7 @@ export default function FormationPage() {
     <>
       {/* ── HERO ────────────────────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/ressort.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/ressort.webp"
         overlay
         className="py-32"
       >
@@ -189,7 +189,7 @@ export default function FormationPage() {
                 <div className="bg-[#0d2420] border border-[#C9A96E]/30 rounded-2xl p-5 shadow-2xl space-y-4">
                   <div className="relative rounded-xl overflow-hidden">
                     <Image
-                      src="/assets/images/partenaires/sun-siyam/hero/hotels.jpg"
+                      src="/assets/images/partenaires/sun-siyam/hero/hotels.webp"
                       alt="Formation Sun Siyam"
                       width={400}
                       height={220}
@@ -270,7 +270,7 @@ export default function FormationPage() {
 
       {/* ── FORMATS POSSIBLES ────────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/audience.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/audience.webp"
         overlay
         className="py-20"
       >
@@ -356,7 +356,7 @@ export default function FormationPage() {
 
       {/* ── PLANIFIER UNE FORMATION ──────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-3.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-3.webp"
         overlay
         className="py-24"
         id="planifier"
@@ -431,7 +431,7 @@ export default function FormationPage() {
 
       {/* ── KIT PRO MINI ─────────────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-2.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-2.webp"
         overlay
         className="py-20"
       >

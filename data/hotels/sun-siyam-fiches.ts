@@ -77,7 +77,7 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
     tagline: "Séjour sensation pour familles, tribus et clients actifs.",
     description:
       "Le resort à recommander quand vos clients veulent les Maldives… sans la peur de s'ennuyer. Tout est pensé pour l'action, le partage et les souvenirs inoubliables.",
-    heroImage: "/assets/images/partenaires/sun-siyam/hero/hero-1.JPG",
+    heroImage: "/assets/images/partenaires/sun-siyam/hero/hero-1.webp",
     collection: "Collection lifestyle",
     collectionColor: "bg-sky-700",
     heroBadges: ["Collection lifestyle", "Maldives", "Familles", "All inclusive", "Activités"],
@@ -102,12 +102,12 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(Car), label: "Go-kart et expériences lifestyle" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/water-villa-with-pool-slide.jpg", title: "Villa sur pilotis avec toboggan privatif", description: "Plongez depuis votre terrasse et amusez-vous en un clin d'œil." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/SW-Waterworld-final.jpg", title: "Siyam Water World", description: "Le plus grand parc aquatique flottant des Maldives." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/sw-horse-ranch.jpg", title: "Horse Ranch", description: "Équitation, balades au coucher du soleil et moments uniques." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/sw-go-cart.jpg", title: "Go-Kart", description: "Adrénaline sur circuit au cœur de l'île." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/SW-pool-party.jpg", title: "Pool Parties", description: "Ambiance, DJ sets et vibes toute la journée." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/rent-a-moke.jpg", title: "Rent-a-Moke", description: "Explorez l'île à votre rythme et en toute liberté." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/water-villa-with-pool-slide.webp", title: "Villa sur pilotis avec toboggan privatif", description: "Plongez depuis votre terrasse et amusez-vous en un clin d'œil." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/SW-Waterworld-final.webp", title: "Siyam Water World", description: "Le plus grand parc aquatique flottant des Maldives." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/sw-horse-ranch.webp", title: "Horse Ranch", description: "Équitation, balades au coucher du soleil et moments uniques." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/sw-go-cart.webp", title: "Go-Kart", description: "Adrénaline sur circuit au cœur de l'île." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/SW-pool-party.webp", title: "Pool Parties", description: "Ambiance, DJ sets et vibes toute la journée." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/ssworld/rent-a-moke.webp", title: "Rent-a-Moke", description: "Explorez l'île à votre rythme et en toute liberté." },
     ],
     argumentAgence: {
       title: "Le resort qui se vend tout seul.",
@@ -122,9 +122,9 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       "Réactivité & accompagnement",
     ],
     autresResorts: [
-      { slug: "iru-fushi", name: "Sun Siyam Iru Fushi", image: "/assets/images/partenaires/sun-siyam/hero/fiche/SSIF.jpg", tagline: "Luxe tropical et expériences inoubliables." },
-      { slug: "olhuveli", name: "Sun Siyam Olhuveli", image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.jpg", tagline: "Aventures, sports et fun pour tous." },
-      { slug: "iru-veli", name: "Sun Siyam Iru Veli", image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", tagline: "Élégance, intimité et parenthèse romantique." },
+      { slug: "iru-fushi", name: "Sun Siyam Iru Fushi", image: "/assets/images/partenaires/sun-siyam/hero/fiche/SSIF.webp", tagline: "Luxe tropical et expériences inoubliables." },
+      { slug: "olhuveli", name: "Sun Siyam Olhuveli", image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", tagline: "Aventures, sports et fun pour tous." },
+      { slug: "iru-veli", name: "Sun Siyam Iru Veli", image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.webp", tagline: "Élégance, intimité et parenthèse romantique." },
     ],
   },
 
@@ -134,7 +134,7 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
     tagline: "La valeur sûre luxe qui rassure autant les couples que les familles.",
     description:
       "Élégance naturelle, confort absolu et service attentionné : Iru Fushi réunit tous les atouts d'une île premium. Gastronomie variée, spa d'exception et expériences uniques sont au cœur d'un art de recevoir qui fait la différence.",
-    heroImage: "/assets/images/partenaires/sun-siyam/hero/fiche/SSIF.jpg",
+    heroImage: "/assets/images/partenaires/sun-siyam/hero/fiche/SSIF.webp",
     collection: "Collection luxe",
     collectionColor: "bg-amber-700",
     heroBadges: ["Collection luxe", "Maldives", "Luxe", "Familles premium", "Spa", "Plongée"],
@@ -164,12 +164,12 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(Home), label: "Villas spacieuses" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/premium-islander.jpg", title: "Expérience insulaire d’exception", description: "Vivez l'essence d'Iru Fushi : luxe discret, service sur-mesure et nature préservée." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/jungle-spa.jpg", title: "Expérience spa en écrin naturel", description: "Soins holistiques dans un cadre tropical apaisant pour un lâcher-prise total." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/nemo-ref.jpg", title: "Immersion au cœur du récif Nemo", description: "Snorkeling exceptionnel sur le récif, maison peuplé de poissons tropicaux." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/water-villa.jpg", title: "Villas d'exception sur pilotis", description: "Villas sur pilotis avec piscine privée et accès direct au lagon turquoise." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/Family-Beach-Villa.jpg", title: "Villa familiale d’exception en bord de mer", description: "Espaces généreux en bord de plage, parfaits pour les familles en quête de confort." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/moment-signature.jpg", title: "Moments signature", description: "Dîners privés, croisières au coucher du soleil et instants inoubliables à deux ou en famille." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/premium-islander.webp", title: "Expérience insulaire d’exception", description: "Vivez l'essence d'Iru Fushi : luxe discret, service sur-mesure et nature préservée." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/jungle-spa.webp", title: "Expérience spa en écrin naturel", description: "Soins holistiques dans un cadre tropical apaisant pour un lâcher-prise total." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/nemo-ref.webp", title: "Immersion au cœur du récif Nemo", description: "Snorkeling exceptionnel sur le récif, maison peuplé de poissons tropicaux." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/water-villa.webp", title: "Villas d'exception sur pilotis", description: "Villas sur pilotis avec piscine privée et accès direct au lagon turquoise." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/Family-Beach-Villa.webp", title: "Villa familiale d’exception en bord de mer", description: "Espaces généreux en bord de plage, parfaits pour les familles en quête de confort." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/moment-signature.webp", title: "Moments signature", description: "Dîners privés, croisières au coucher du soleil et instants inoubliables à deux ou en famille." },
     ],
     argumentAgence: {
       isQuote: true,
@@ -186,9 +186,9 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       "Mise en relation rapide pour demandes qualifiées",
     ],
     autresResorts: [
-      { slug: "iru-veli", name: "Sun Siyam Iru Veli", image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", tagline: "Élégance contemporaine et services haut de gamme pour couples et familles." },
-      { slug: "vilu-reef", name: "Sun Siyam Vilu Reef", image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg", tagline: "Charme authentique et service au cœur d'un lagon exceptionnel." },
-      { slug: "world", name: "Siyam World Maldives", image: "/assets/images/partenaires/sun-siyam/hero/hero-1.JPG", tagline: "Le resort le plus vaste des Maldives avec des activités incomparables." },
+      { slug: "iru-veli", name: "Sun Siyam Iru Veli", image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.webp", tagline: "Élégance contemporaine et services haut de gamme pour couples et familles." },
+      { slug: "vilu-reef", name: "Sun Siyam Vilu Reef", image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", tagline: "Charme authentique et service au cœur d'un lagon exceptionnel." },
+      { slug: "world", name: "Siyam World Maldives", image: "/assets/images/partenaires/sun-siyam/hero/hero-1.webp", tagline: "Le resort le plus vaste des Maldives avec des activités incomparables." },
     ],
   },
 
@@ -198,7 +198,7 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
     tagline: "L'adresse confidentielle où chaque villa devient une bulle privée.",
     description:
       "Pensé pour les lunes de miel et les moments à deux, Sun Siyam Iru Veli réinvente l'intimité aux Maldives. Chaque villa avec piscine privée, des dîners à la carte inclus 24h/24, des couchers de soleil magiques et un service attentionné pour vivre votre histoire, en toute simplicité.",
-    heroImage: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg",
+    heroImage: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.webp",
     collection: "Collection privée",
     collectionColor: "bg-teal-700",
     heroBadges: ["Collection privée", "Maldives", "Honeymoon", "Piscine privée", "Romance", "All inclusive"],
@@ -224,12 +224,12 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(UtensilsCrossed), label: "Private dining" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/5.jpeg", title: "Beach Villa with Pool", description: "À quelques pas du sable blanc et du lagon." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/4.jpeg", title: "Ocean Villa with Pool", description: "Sur pilotis, avec accès direct au lagon turquoise." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/3.jpeg", title: "Dolphin Ocean Villa", description: "Admirez les dauphins depuis votre terrasse privée." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/1.jpeg", title: "Sunset experiences", description: "Couchers de soleil inoubliables, chaque soir." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/2.jpeg", title: "Private dining", description: "Dîners exclusifs où vous voulez, quand vous voulez." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", title: "Service signature", description: "Des attentions délicates qui font toute la différence." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/5.webp", title: "Beach Villa with Pool", description: "À quelques pas du sable blanc et du lagon." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/4.webp", title: "Ocean Villa with Pool", description: "Sur pilotis, avec accès direct au lagon turquoise." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/3.webp", title: "Dolphin Ocean Villa", description: "Admirez les dauphins depuis votre terrasse privée." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/1.webp", title: "Sunset experiences", description: "Couchers de soleil inoubliables, chaque soir." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-veli/2.webp", title: "Private dining", description: "Dîners exclusifs où vous voulez, quand vous voulez." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.webp", title: "Service signature", description: "Des attentions délicates qui font toute la différence." },
     ],
     argumentAgence: {
       isQuote: false,
@@ -245,9 +245,9 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       "Mise en relation rapide pour demandes qualifiées",
     ],
     autresResorts: [
-      { slug: "vilu-reef", name: "Sun Siyam Vilu Reef", image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg", tagline: "An amoureux de nature et de lagon infini." },
-      { slug: "iru-fushi", name: "Sun Siyam Iru Fushi", image: "/assets/images/partenaires/sun-siyam/hero/fiche/SSIF.jpg", tagline: "L'iconique 5★ pour une lune de miel grand luxe aux Maldives." },
-      { slug: "pasikudah", name: "Sun Siyam Pasikudah, Sri Lanka", image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.jpg", tagline: "Lune de miel exotique entre plages sauvages et culture sri lankaise." },
+      { slug: "vilu-reef", name: "Sun Siyam Vilu Reef", image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", tagline: "An amoureux de nature et de lagon infini." },
+      { slug: "iru-fushi", name: "Sun Siyam Iru Fushi", image: "/assets/images/partenaires/sun-siyam/hero/fiche/SSIF.webp", tagline: "L'iconique 5★ pour une lune de miel grand luxe aux Maldives." },
+      { slug: "pasikudah", name: "Sun Siyam Pasikudah, Sri Lanka", image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", tagline: "Lune de miel exotique entre plages sauvages et culture sri lankaise." },
     ],
   },
 
@@ -257,7 +257,7 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
     tagline: "L'île confidentielle pour les couples qui veulent ressentir les Maldives.",
     description:
       "Boutique hideaway à taille humaine, Vilu Reef séduit par son récif maison spectaculaire, son atmosphère barefoot et son sens du détail. Ici, chaque instant est simple, vrai et profondément romantique.",
-    heroImage: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg",
+    heroImage: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp",
     collection: "Collection privée",
     collectionColor: "bg-teal-700",
     heroBadges: ["Collection privée", "Maldives", "Couples", "Récif", "Snorkeling", "Authentique"],
@@ -282,12 +282,12 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(UtensilsCrossed), label: "Private dining romantique" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg", title: "House Reef", description: "Snorkeling depuis la plage avec raies, tortues et poissons tropicaux." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg", title: "Cinema by Moonlight", description: "Votre film préféré sous les étoiles, les pieds dans le sable." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg", title: "Plant Based Bliss", description: "Cuisine végétale créative, fraîche et savoureuse, issue de la ferme voisine." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg", title: "Beach Villa with Pool", description: "Villas spacieuses avec piscine privée à quelques pas du lagon." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg", title: "Water Villa with Pool", description: "Villas sur pilotis avec piscine privée et accès direct au lagon." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg", title: "Private Dining", description: "Dîners romantiques sur la plage, sous les palmiers ou sur votre terrasse." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "House Reef", description: "Snorkeling depuis la plage avec raies, tortues et poissons tropicaux." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "Cinema by Moonlight", description: "Votre film préféré sous les étoiles, les pieds dans le sable." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "Plant Based Bliss", description: "Cuisine végétale créative, fraîche et savoureuse, issue de la ferme voisine." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "Beach Villa with Pool", description: "Villas spacieuses avec piscine privée à quelques pas du lagon." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "Water Villa with Pool", description: "Villas sur pilotis avec piscine privée et accès direct au lagon." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "Private Dining", description: "Dîners romantiques sur la plage, sous les palmiers ou sur votre terrasse." },
     ],
     argumentAgence: {
       isQuote: false,
@@ -303,9 +303,9 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       "Mise en relation rapide pour demandes qualifiées",
     ],
     autresResorts: [
-      { slug: "iru-veli", name: "Sun Siyam Iru Veli", image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", tagline: "Luxe décontracté et lagon infini aux Maldives." },
-      { slug: "olhuveli", name: "Sun Siyam Olhuveli", image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.jpg", tagline: "L'île iconique pour des expériences variées à deux." },
-      { slug: "iru-fushi", name: "Sun Siyam Iru Fushi", image: "/assets/images/partenaires/sun-siyam/hero/fiche/SSIF.jpg", tagline: "L'âme authentique des Maldives dans un cadre naturel." },
+      { slug: "iru-veli", name: "Sun Siyam Iru Veli", image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.webp", tagline: "Luxe décontracté et lagon infini aux Maldives." },
+      { slug: "olhuveli", name: "Sun Siyam Olhuveli", image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", tagline: "L'île iconique pour des expériences variées à deux." },
+      { slug: "iru-fushi", name: "Sun Siyam Iru Fushi", image: "/assets/images/partenaires/sun-siyam/hero/fiche/SSIF.webp", tagline: "L'âme authentique des Maldives dans un cadre naturel." },
     ],
   },
 
@@ -315,7 +315,7 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
     tagline: "Le resort polyvalent qui facilite les recommandations agence.",
     description:
       "Un resort complet, dynamique et rassurant, réparti sur trois îles avec une belle diversité d'hébergements, de restaurants et d'activités. Idéal pour répondre à tous les profils de voyageurs et toutes les envies, en toute confiance.",
-    heroImage: "/assets/images/partenaires/sun-siyam/hero/fiche/SSO-2.jpg",
+    heroImage: "/assets/images/partenaires/sun-siyam/hero/fiche/SSO-2.webp",
     collection: "Collection lifestyle",
     collectionColor: "bg-sky-700",
     heroBadges: ["Collection lifestyle", "Maldives", "Familles", "Polyvalent", "Activités", "Trois îles"],
@@ -340,12 +340,12 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(Fish), label: "Observation de raies mantas et requins-baleines" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.jpg", title: "Snorkeling excursion", description: "Explorez les récifs et la vie marine." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.jpg", title: "Jet Car", description: "Adrénaline et fun sur le lagon." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.jpg", title: "Traditional Fishing", description: "Pêche traditionnelle au coucher du soleil." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.jpg", title: "Local Island Exploration", description: "Découvrez la culture et la vie locale." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.jpg", title: "Whale Shark Expedition", description: "Vivez la rencontre unique avec les géants de l'océan." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.jpg", title: "All Inclusive Package", description: "Sérénité totale tout au long du séjour." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "Snorkeling excursion", description: "Explorez les récifs et la vie marine." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "Jet Car", description: "Adrénaline et fun sur le lagon." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "Traditional Fishing", description: "Pêche traditionnelle au coucher du soleil." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "Local Island Exploration", description: "Découvrez la culture et la vie locale." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "Whale Shark Expedition", description: "Vivez la rencontre unique avec les géants de l'océan." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "All Inclusive Package", description: "Sérénité totale tout au long du séjour." },
     ],
     argumentAgence: {
       isQuote: false,
@@ -361,9 +361,9 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       "Mise en relation rapide pour demandes qualifiées",
     ],
     autresResorts: [
-      { slug: "world", name: "Siyam World Maldives", image: "/assets/images/partenaires/sun-siyam/hotels/SW-2.jpg", tagline: "Luxe et immensité, une île aux possibilités infinies." },
-      { slug: "iru-fushi", name: "Sun Siyam Iru Fushi", image: "/assets/images/partenaires/sun-siyam/hero/fiche/SSIF.jpg", tagline: "L'intemporel romantique au cœur des Maldives." },
-      { slug: "vilu-reef", name: "Sun Siyam Vilu Reef", image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg", tagline: "Authenticité et intimité dans un cadre préservé." },
+      { slug: "world", name: "Siyam World Maldives", image: "/assets/images/partenaires/sun-siyam/hotels/SW-2.webp", tagline: "Luxe et immensité, une île aux possibilités infinies." },
+      { slug: "iru-fushi", name: "Sun Siyam Iru Fushi", image: "/assets/images/partenaires/sun-siyam/hero/fiche/SSIF.webp", tagline: "L'intemporel romantique au cœur des Maldives." },
+      { slug: "vilu-reef", name: "Sun Siyam Vilu Reef", image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", tagline: "Authenticité et intimité dans un cadre préservé." },
     ],
   },
 
@@ -373,7 +373,7 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
     tagline: "La page qui ouvre le champ des combinés culture + plage.",
     description:
       "Un boutique resort confidentiel sur la côte Est du Sri Lanka, entre plage tranquille et patrimoine millénaire. Idéal pour prolonger un itinéraire culturel avec douceur, sens et authenticité.",
-    heroImage: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.jpg",
+    heroImage: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp",
     collection: "Collection privée",
     collectionColor: "bg-teal-700",
     heroBadges: ["Collection privée", "Sri Lanka", "Culture", "Ayurveda", "Combiné", "Plage calme"],
@@ -398,12 +398,12 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(Binoculars), label: "Excursions Polonnaruwa / Minneriya / Dambulla" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.jpg", title: "Garden Pavilion", description: "Villas entourées de jardins tropicaux pour une intimité totale." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.jpg", title: "Ocean Pavilion", description: "Vue mer et design contemporain, à deux pas de la plage." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.jpg", title: "Private Pool Pavilion", description: "Piscine privée et espaces extérieurs pour un séjour en toute quiétude." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.jpg", title: "Sri Lankan Food Tour", description: "Partez au marché local puis cuisinez les saveurs du Sri Lanka." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.jpg", title: "UNESCO Polonnaruwa", description: "Découvrez l'ancienne capitale royale classée au patrimoine mondial." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.jpg", title: "Minneriya Safari", description: "Vivez le spectacle des éléphants dans leur habitat naturel." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "Garden Pavilion", description: "Villas entourées de jardins tropicaux pour une intimité totale." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "Ocean Pavilion", description: "Vue mer et design contemporain, à deux pas de la plage." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "Private Pool Pavilion", description: "Piscine privée et espaces extérieurs pour un séjour en toute quiétude." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "Sri Lankan Food Tour", description: "Partez au marché local puis cuisinez les saveurs du Sri Lanka." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "UNESCO Polonnaruwa", description: "Découvrez l'ancienne capitale royale classée au patrimoine mondial." },
+      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "Minneriya Safari", description: "Vivez le spectacle des éléphants dans leur habitat naturel." },
     ],
     argumentAgence: {
       isQuote: true,
@@ -420,8 +420,8 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       "Mise en relation rapide pour demandes qualifiées",
     ],
     autresResorts: [
-      { slug: "iru-veli", name: "Sun Siyam Iru Veli", image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", tagline: "Élégance et tranquillité aux Maldives." },
-      { slug: "vilu-reef", name: "Sun Siyam Vilu Reef", image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg", tagline: "Luxe naturel et service d'exception." },
+      { slug: "iru-veli", name: "Sun Siyam Iru Veli", image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.webp", tagline: "Élégance et tranquillité aux Maldives." },
+      { slug: "vilu-reef", name: "Sun Siyam Vilu Reef", image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", tagline: "Luxe naturel et service d'exception." },
     ],
   },
 };

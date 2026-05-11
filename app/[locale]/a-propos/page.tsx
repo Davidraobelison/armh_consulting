@@ -16,7 +16,7 @@ export default function About() {
       <Hero
         title="QUI SOMMES-NOUS ?"
         subtitle="Dynamique · Passionné · Impliqué"
-        backgroundImage="/assets/images/home/partners/Logo-1-nortours.jpg"
+        backgroundImage="/assets/images/home/partners/Logo-1-nortours.webp"
       />
 
       {/* HISTOIRE */}

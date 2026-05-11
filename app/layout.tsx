@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "ARMH Consulting – Tourisme, Marketing & Hôtellerie",
   description: "Cabinet de conseil spécialisé en tourisme, marketing et hôtellerie.",
   icons: {
-    icon: "/assets/images/others/favicon.jpg",
+    icon: "/assets/images/others/favicon.webp",
   },
   openGraph: {
     title: "ARMH Consulting – Tourisme, Marketing & Hôtellerie",

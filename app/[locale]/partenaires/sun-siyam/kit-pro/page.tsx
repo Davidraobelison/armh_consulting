@@ -108,12 +108,12 @@ const FORM_VALUE_PROPS = [
 ];
 
 const HOTEL_THUMBS = [
-  { src: "/assets/images/partenaires/sun-siyam/hotels/SW-2.jpg", label: "Siyam World" },
-  { src: "/assets/images/partenaires/sun-siyam/hotels/SSIF-2.jpg", label: "Iru Fushi" },
-  { src: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.jpg", label: "Iru Veli" },
-  { src: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.jpg", label: "Vilu Reef" },
-  { src: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.jpg", label: "Olhuveli" },
-  { src: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.jpg", label: "Pasikudah" },
+  { src: "/assets/images/partenaires/sun-siyam/hotels/SW-2.webp", label: "Siyam World" },
+  { src: "/assets/images/partenaires/sun-siyam/hotels/SSIF-2.webp", label: "Iru Fushi" },
+  { src: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.webp", label: "Iru Veli" },
+  { src: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", label: "Vilu Reef" },
+  { src: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", label: "Olhuveli" },
+  { src: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", label: "Pasikudah" },
 ];
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -123,7 +123,7 @@ export default function KitProPage() {
     <>
       {/* ── HERO ────────────────────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/hero-3.JPG"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/hero-3.webp"
         overlay
         className="py-32"
       >
@@ -265,7 +265,7 @@ export default function KitProPage() {
 
       {/* ── CE QUE L'AGENCE REÇOIT ───────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/hotels.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/hotels.webp"
         overlay
         className="py-24"
       >
@@ -303,7 +303,7 @@ export default function KitProPage() {
 
       {/* ── RECEVOIR LE KIT – FORM ────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-2.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/esg-2.webp"
         overlay
         className="py-24"
         id="recevoir-kit"
@@ -351,7 +351,7 @@ export default function KitProPage() {
 
       {/* ── FORMER MON ÉQUIPE ─────────────────────────────────────────────────── */}
       <Section
-        backgroundImage="/assets/images/partenaires/sun-siyam/hero/audience.jpg"
+        backgroundImage="/assets/images/partenaires/sun-siyam/hero/audience.webp"
         overlay
         className="py-20"
       >

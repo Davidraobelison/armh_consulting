@@ -211,7 +211,7 @@ export default async function Home() {
             {/* LEFT SIDE - Photo + Signature */}
             <div className="md:col-span-4 flex flex-col items-center md:items-center text-center md:text-center space-y-4">
               <Image
-                src="/assets/images/logo/Rina Andria.jpeg"
+                src="/assets/images/logo/Rina Andria.webp"
                 alt="Rina Andria"
                 width={280}
                 height={280}
