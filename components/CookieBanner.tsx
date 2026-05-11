@@ -1,14 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function CookieBanner() {
-  // Lazy initializer — s'exécute une seule fois côté client, jamais côté serveur
-  const [visible, setVisible] = useState<boolean>(() => {
-    if (typeof window === "undefined") return false;
-    return !window.localStorage.getItem("armh_cookie_consent");
-  });
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setVisible(!localStorage.getItem("armh_cookie_consent"));
+  }, []);
 
   const accept = () => {
     window.localStorage.setItem("armh_cookie_consent", "accepted");

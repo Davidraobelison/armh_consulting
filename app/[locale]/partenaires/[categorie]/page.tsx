@@ -8,6 +8,7 @@ import Reveal from "@/components/ui/Reveal";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
+import SunSiyamPage from "@/app/[locale]/partenaires/_components/SunSiyamPage";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -19,6 +20,7 @@ type CategoryData = {
 const CATEGORIES: CategoryData[] = [
   { slug: "destinations", label: "Destinations & institutions touristiques" },
   { slug: "hotels", label: "Hôtels et groupes hôteliers" },
+  { slug: "sun-siyam", label: "Sun Siyam Resorts" },
   { slug: "dmc", label: "DMC & Prestataires locaux" },
   { slug: "touroperateurs", label: "Tours Opérateurs & Agences de voyages" },
   { slug: "formation", label: "Organismes de formation & Écoles du tourisme" },
@@ -110,6 +112,10 @@ export default function BBVoyagePartnerPage() {
   const params = useParams();
   const slug = (params?.categorie as string) ?? "dmc";
 
+  if (slug === "sun-siyam") {
+    return <SunSiyamPage />;
+  }
+
   if (slug !== "dmc") {
     return (
       <Section
@@ -199,14 +205,6 @@ export default function BBVoyagePartnerPage() {
               {/* LEFT – Quote + Badge */}
               <div className="md:col-span-7 space-y-8">
                 {/* ARMH Header */}
-                <Reveal>
-                  <div className="flex items-center gap-3">
-                    <span className="w-1 h-[2px] bg-blue-400" />
-                    <p className="text-lg font-semibold text-blue-300 uppercase">
-                      ARMH Consulting - Partenaire de représentation France
-                    </p>
-                  </div>
-                </Reveal>
 
                 {/* Title */}
                 <Reveal delay={0.1}>
