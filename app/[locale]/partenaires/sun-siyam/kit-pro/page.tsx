@@ -167,7 +167,7 @@ export default function KitProPage() {
                   Le support de vente pour comparer rapidement les 6 adresses
                   et orienter le bon client vers le bon resort.
                 </p>
-                <p className="text-sm text-white/70 leading-relaxed mt-3">
+                <p className="text-base text-white/95 leading-relaxed mt-3">
                   Un kit pensé pour les agences : comparatif clair, fiches
                   express, argumentaires clés et idées de combinés. Tout ce
                   qu'il faut pour vendre mieux, plus vite.
@@ -252,8 +252,8 @@ export default function KitProPage() {
                   <div className="w-14 h-14 rounded-full bg-[#C9A96E]/20 border border-[#C9A96E]/40 flex items-center justify-center text-[#C9A96E]">
                     {f.icon}
                   </div>
-                  <p className="text-sm font-semibold text-white">{f.title}</p>
-                  <p className="text-xs text-white/60 leading-relaxed">
+                  <p className="text-base font-semibold text-white">{f.title}</p>
+                  <p className="text-sm text-white/90 leading-relaxed">
                     {f.desc}
                   </p>
                 </div>
@@ -286,10 +286,10 @@ export default function KitProPage() {
                       {item.icon}
                     </div>
                     <div>
-                      <p className="text-sm font-semibold text-white">
+                      <p className="text-base font-semibold text-white">
                         {item.title}
                       </p>
-                      <p className="text-xs text-white/60 mt-1 leading-relaxed">
+                      <p className="text-sm text-white/70 mt-1 leading-relaxed">
                         {item.desc}
                       </p>
                     </div>
@@ -334,10 +334,10 @@ export default function KitProPage() {
                       {vp.icon}
                     </div>
                     <div>
-                      <p className="text-sm font-semibold text-white">
+                      <p className="text-base font-semibold text-white">
                         {vp.title}
                       </p>
-                      <p className="text-xs text-white/55 mt-0.5 leading-relaxed">
+                      <p className="text-sm text-white/70 mt-0.5 leading-relaxed">
                         {vp.desc}
                       </p>
                     </div>
@@ -365,7 +365,7 @@ export default function KitProPage() {
                 </h2>
               </Reveal>
               <Reveal delay={0.1}>
-                <p className="text-sm text-white/70 leading-relaxed">
+                <p className="text-base text-white/90 leading-relaxed">
                   Besoin d'un temps d'échange, d'une formation express ou
                   d'aide pour un dossier en cours ? Nos experts sont là pour
                   vous accompagner.
@@ -383,7 +383,7 @@ export default function KitProPage() {
                   <p className="text-base font-semibold text-white">
                     Formation agences
                   </p>
-                  <p className="text-sm text-white/60 flex-1">
+                  <p className="text-sm text-white/90 flex-1">
                     Sessions en ligne sur les 6 hôtels, les combinés et les
                     argumentaires clés.
                   </p>
@@ -404,7 +404,7 @@ export default function KitProPage() {
                   <p className="text-base font-semibold text-white">
                     Partager un brief client
                   </p>
-                  <p className="text-sm text-white/60 flex-1">
+                  <p className="text-sm text-white/90 flex-1">
                     Décrivez votre demande et recevez nos recommandations
                     personnalisées.
                   </p>
@@ -430,16 +430,16 @@ export default function KitProPage() {
         <Container>
           <div className="max-w-5xl mx-auto">
             <Reveal>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                 {WHY_ARMH.map((item, i) => (
                   <div
                     key={i}
                     className="bg-white/10 border border-white/20 rounded-2xl p-4 flex flex-col items-center gap-3 text-center hover:bg-white/15 transition-colors backdrop-blur-sm"
                   >
-                    <div className="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center text-white shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center text-white shrink-0">
                       {item.icon}
                     </div>
-                    <p className="text-xs text-white font-medium leading-snug">
+                    <p className="text-sm text-white font-medium leading-snug">
                       {item.label}
                     </p>
                   </div>

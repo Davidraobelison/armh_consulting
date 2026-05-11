@@ -96,10 +96,10 @@ export const HOTELS: Hotel[] = [
   {
     id: 4,
     slug: "vilu-reef",
-    name: "Une île romantique entre luxe  et récifs préservés", // ancien vilu reef
+    name: "Sun Siyam Vilu Reef", // ancien vilu reef
     collection: " Collection privée",
     collectionColor: "bg-teal-700",
-    tagline: "La love story maldivienne en harmonie avec le récif.",
+    tagline: "Une île romantique entre luxe  et récifs préservés.",
     image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp",
     tags: ["tous", "honeymoon", "activites"],
     tagLabels: ["Récif", "Romantique"],
