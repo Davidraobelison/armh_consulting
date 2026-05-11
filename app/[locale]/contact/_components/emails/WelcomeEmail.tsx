@@ -24,7 +24,7 @@ export function WelcomeEmail({ nom }: WelcomeEmailProps) {
       <Head />
       <Tailwind>
         <Body className="bg-[#eaf2fb] font-sans">
-          <Preview>ARMH Consulting — Nous avons bien reçu votre message</Preview>
+          <Preview>ARMH Consulting - Nous avons bien reçu votre message</Preview>
 
           <Container className="mx-auto py-8 px-4 max-w-[600px]">
 

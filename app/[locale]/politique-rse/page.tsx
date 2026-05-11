@@ -13,7 +13,7 @@ const sections = [
   {
     number: "01",
     title: "Notre engagement RSE",
-    content: `Chez ARMH Consulting, la Responsabilité Sociétale des Entreprises (RSE) n'est pas un outil de communication — c'est une conviction profonde qui oriente chacune de nos décisions. En tant que cabinet de conseil spécialisé dans le tourisme B2B francophone, nous avons la responsabilité d'influencer positivement les pratiques de notre secteur.
+    content: `Chez ARMH Consulting, la Responsabilité Sociétale des Entreprises (RSE) n'est pas un outil de communication - c'est une conviction profonde qui oriente chacune de nos décisions. En tant que cabinet de conseil spécialisé dans le tourisme B2B francophone, nous avons la responsabilité d'influencer positivement les pratiques de notre secteur.
 
 Notre fondatrice, Rina Andria, a bâti ARMH Consulting sur des valeurs d'authenticité, d'équité et de durabilité. Ces valeurs se traduisent concrètement dans notre façon de travailler avec nos partenaires, les destinations que nous représentons et les équipes que nous formons.`,
   },
@@ -121,7 +121,7 @@ export default function PolitiqueRSE() {
             {/* Date de mise à jour */}
             <Reveal delay={0.5}>
               <p className="text-white/30 text-sm text-center pt-4">
-                Politique RSE — ARMH Consulting · Dernière mise à jour : janvier 2025
+                Politique RSE - ARMH Consulting · Dernière mise à jour : janvier 2025
               </p>
             </Reveal>
           </div>

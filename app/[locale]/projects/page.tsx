@@ -84,7 +84,7 @@ export default function ProjectsPage() {
             <ProjectGallerySection
               label="Networking"
               title="Événements & Networking"
-              subtitle="Soirées, inaugurations, galas — promouvoir les destinations et tisser des liens durables entre partenaires."
+              subtitle="Soirées, inaugurations, galas - promouvoir les destinations et tisser des liens durables entre partenaires."
               photos={networkingPhotos}
             />
 

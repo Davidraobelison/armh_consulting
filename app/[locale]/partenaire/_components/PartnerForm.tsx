@@ -164,7 +164,7 @@ export default function PartnerForm() {
                 required
                 className={selectClass}
               >
-                <option value="" className="bg-gray-900">— Sélectionnez votre profil —</option>
+                <option value="" className="bg-gray-900">- Sélectionnez votre profil -</option>
                 <option value="destination" className="bg-gray-900">Destination / institution touristique</option>
                 <option value="hotel" className="bg-gray-900">Hôtel / groupe hôtelier</option>
                 <option value="dmc" className="bg-gray-900">DMC / prestataire local</option>
@@ -189,7 +189,7 @@ export default function PartnerForm() {
                 required
                 className={selectClass}
               >
-                <option value="" className="bg-gray-900">— Sélectionnez un type —</option>
+                <option value="" className="bg-gray-900">- Sélectionnez un type -</option>
                 <option value="commercial" className="bg-gray-900">Développement commercial B2B</option>
                 <option value="representation" className="bg-gray-900">Représentation marchés francophones</option>
                 <option value="evenement" className="bg-gray-900">Workshop / roadshow / événement</option>
@@ -209,7 +209,7 @@ export default function PartnerForm() {
                 required
                 className={selectClass}
               >
-                <option value="" className="bg-gray-900">— Sélectionnez —</option>
+                <option value="" className="bg-gray-900">- Sélectionnez -</option>
                 <option value="pret" className="bg-gray-900">Projet défini, prêt à être lancé</option>
                 <option value="cadrage" className="bg-gray-900">Projet en cadrage</option>
                 <option value="info" className="bg-gray-900">Simple prise d&apos;information</option>
@@ -230,7 +230,7 @@ export default function PartnerForm() {
               required
               className={selectClass}
             >
-              <option value="" className="bg-gray-900">— Sélectionnez une source —</option>
+              <option value="" className="bg-gray-900">- Sélectionnez une source -</option>
               <option value="google" className="bg-gray-900">Recherche Google</option>
               <option value="linkedin" className="bg-gray-900">LinkedIn</option>
               <option value="instagram" className="bg-gray-900">Instagram</option>

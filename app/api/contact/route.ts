@@ -83,7 +83,7 @@ export async function POST(req: Request) {
       from: emailFrom,
       to: [emailTo],
       replyTo: email,
-      subject: `[ARMH] Nouveau message — ${objet}`,
+      subject: `[ARMH] Nouveau message - ${objet}`,
       react: ContactEmailTemplate({ nom: safeNom, entreprise: safeEntreprise, email, objet, provenance, message: safeMessage }),
     });
 
@@ -94,7 +94,7 @@ export async function POST(req: Request) {
     const { error: errorWelcome } = await resend.emails.send({
       from: emailFrom,
       to: [email],
-      subject: "ARMH Consulting — Nous avons bien reçu votre message",
+      subject: "ARMH Consulting - Nous avons bien reçu votre message",
       react: WelcomeEmail({ nom: safeNom }),
     });
 

@@ -43,7 +43,7 @@ export function PartnerEmailTemplate({
       <Head />
       <Tailwind>
         <Body className="bg-[#eaf2fb] font-sans text-[#0d2a4a]">
-          <Preview>Nouvelle demande partenariat de {nom} — {typePartenariat}</Preview>
+          <Preview>Nouvelle demande partenariat de {nom} - {typePartenariat}</Preview>
 
           <Container className="p-5 mx-auto max-w-[600px]">
             <Section className="bg-white rounded-xl overflow-hidden border border-[#c5ddf4]">

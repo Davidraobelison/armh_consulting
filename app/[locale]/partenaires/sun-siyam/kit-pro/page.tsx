@@ -458,7 +458,7 @@ export default function KitProPage() {
               ARMH Consulting × Sun Siyam Resorts
             </p>
             <p className="text-white/40 text-xs">
-              Magazine d'inspirations et conversion — version finale
+              Magazine d'inspirations et conversion - version finale
             </p>
           </div>
           <div className="flex items-center gap-3">

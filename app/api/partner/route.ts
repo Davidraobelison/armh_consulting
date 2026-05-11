@@ -91,7 +91,7 @@ export async function POST(req: Request) {
       from: emailFrom,
       to: [emailTo],
       replyTo: email,
-      subject: `[ARMH] Nouvelle demande partenariat — ${typePartenariat}`,
+      subject: `[ARMH] Nouvelle demande partenariat - ${typePartenariat}`,
       react: PartnerEmailTemplate({ nom: safeNom, entreprise: safeEntreprise, email, profil, typePartenariat, horizon, provenance, besoin: safeBesoin }),
     });
 
@@ -102,7 +102,7 @@ export async function POST(req: Request) {
     const { error: errorWelcome } = await resend.emails.send({
       from: emailFrom,
       to: [email],
-      subject: "ARMH Consulting — Votre demande de partenariat a bien été reçue",
+      subject: "ARMH Consulting - Votre demande de partenariat a bien été reçue",
       react: WelcomePartnerEmail({ nom: safeNom, typePartenariat }),
     });
 

@@ -131,7 +131,7 @@ export default function Contact() {
               <Reveal>
                 <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl overflow-hidden">
 
-                  {/* Header band — cohérent avec les formulaires */}
+                  {/* Header band - cohérent avec les formulaires */}
                   <div className="bg-white/10 border-b border-white/10 px-6 py-5">
                     <h2 className="text-lg text-center font-semibold uppercase tracking-widest text-white">
                       Coordonnées directes

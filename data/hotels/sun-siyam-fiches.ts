@@ -91,7 +91,7 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
     arguments: [
       { icon: ic(Gem), title: "Promesse claire", description: "Ici, l'ennui n'existe pas. Le resort le plus complet des Maldives pour tous les âges et tous les profils." },
       { icon: ic(Sparkles), title: "Une signature visuelle forte", description: "Du toboggan privé à la plus grande piscine d'Asie, chaque instant est un souvenir." },
-      { icon: ic(LayoutGrid), title: "Grande variété", description: "Activités terrestres, marines, lifestyle et gastronomie : chacun y trouve son kiff." },
+      { icon: ic(LayoutGrid), title: "Grande variété", description: "Activités terrestres, marines, lifestyle et gastronomie : chacun y trouve son plaisir." },
     ],
     preuves: [
       { icon: ic(Trophy), label: "Le plus grand resort des Maldives" },
@@ -133,7 +133,7 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
     name: "Sun Siyam Iru Fushi",
     tagline: "La valeur sûre luxe qui rassure autant les couples que les familles.",
     description:
-      "Élégance naturelle, confort absolu et service attentionné : Iru Fushi réunit tous les atouts d'une île premium. Gastronomie variée, spa d'exception et expériences uniques sont au cœur d'un art de recevoir qui fait la différence.",
+      "Élégance naturelle, confort absolu et service attentionné : Iru Fushi réunit tous les atouts premium d'une île. Gastronomie variée, spa d'exception et expériences uniques sont au cœur d'un art de recevoir qui fait la différence.",
     heroImage: "/assets/images/partenaires/sun-siyam/hero/fiche/SSIF.webp",
     collection: "Collection luxe",
     collectionColor: "bg-amber-700",
@@ -165,7 +165,7 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
     ],
     experiences: [
       { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/premium-islander.webp", title: "Expérience insulaire d’exception", description: "Vivez l'essence d'Iru Fushi : luxe discret, service sur-mesure et nature préservée." },
-      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/jungle-spa.webp", title: "Expérience spa en écrin naturel", description: "Soins holistiques dans un cadre tropical apaisant pour un lâcher-prise total." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/jungle-spa.webp", title: "Expérience spa au cœur de la nature", description: "Soins holistiques dans un cadre tropical apaisant pour un lâcher-prise total." },
       { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/nemo-ref.webp", title: "Immersion au cœur du récif Nemo", description: "Snorkeling exceptionnel sur le récif, maison peuplé de poissons tropicaux." },
       { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/water-villa.webp", title: "Villas d'exception sur pilotis", description: "Villas sur pilotis avec piscine privée et accès direct au lagon turquoise." },
       { image: "/assets/images/partenaires/sun-siyam/experience-sign/iru-fushi/Family-Beach-Villa.webp", title: "Villa familiale d’exception en bord de mer", description: "Espaces généreux en bord de plage, parfaits pour les familles en quête de confort." },
@@ -282,12 +282,12 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(UtensilsCrossed), label: "Private dining romantique" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "House Reef", description: "Snorkeling depuis la plage avec raies, tortues et poissons tropicaux." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "Cinema by Moonlight", description: "Votre film préféré sous les étoiles, les pieds dans le sable." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "Plant Based Bliss", description: "Cuisine végétale créative, fraîche et savoureuse, issue de la ferme voisine." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "Beach Villa with Pool", description: "Villas spacieuses avec piscine privée à quelques pas du lagon." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "Water Villa with Pool", description: "Villas sur pilotis avec piscine privée et accès direct au lagon." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp", title: "Private Dining", description: "Dîners romantiques sur la plage, sous les palmiers ou sur votre terrasse." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/vilu-ref/1.webp", title: "House Reef", description: "Snorkeling depuis la plage avec raies, tortues et poissons tropicaux." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/vilu-ref/2.webp", title: "Cinema by Moonlight", description: "Votre film préféré sous les étoiles, les pieds dans le sable." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/vilu-ref/3.webp", title: "Parenthèse vegetale", description: "Cuisine végétale créative, fraîche et savoureuse, issue de la ferme voisine." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/vilu-ref/4.webp", title: "Villa pieds dans l'eau avec piscine", description: "Villas spacieuses avec piscine privée à quelques pas du lagon." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/vilu-ref/5.webp", title: "Villas sur pilotis avec piscine", description: "Villas sur pilotis avec piscine privée et accès direct au lagon." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/vilu-ref/6.webp", title: "Diners privés", description: "Dîners romantiques sur la plage, sous les palmiers ou sur votre terrasse." },
     ],
     argumentAgence: {
       isQuote: false,
@@ -340,12 +340,12 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(Fish), label: "Observation de raies mantas et requins-baleines" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "Snorkeling excursion", description: "Explorez les récifs et la vie marine." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "Jet Car", description: "Adrénaline et fun sur le lagon." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "Traditional Fishing", description: "Pêche traditionnelle au coucher du soleil." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "Local Island Exploration", description: "Découvrez la culture et la vie locale." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "Whale Shark Expedition", description: "Vivez la rencontre unique avec les géants de l'océan." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSO-2.webp", title: "All Inclusive Package", description: "Sérénité totale tout au long du séjour." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/olhuveli/1.webp", title: "Snorkeling excursion", description: "Explorez les récifs et la vie marine." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/olhuveli/2.webp", title: "Jet Car", description: "Adrénaline et fun sur le lagon." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/olhuveli/3.webp", title: "Pêche au crépuscule", description: "Découvrez la pêche traditionnelle au coucher du soleil" },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/olhuveli/4.webp", title: "Local Island Exploration", description: "Découvrez la culture et la vie locale." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/olhuveli/5.webp", title: "Whale Shark Expedition", description: "Vivez la rencontre unique avec les géants de l'océan." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/olhuveli/6.webp", title: "Séjour tout compris", description: "Sérénité totale tout au long du séjour." },
     ],
     argumentAgence: {
       isQuote: false,
@@ -398,12 +398,12 @@ export const RESORT_FICHES: Record<string, ResortFicheData> = {
       { icon: ic(Binoculars), label: "Excursions Polonnaruwa / Minneriya / Dambulla" },
     ],
     experiences: [
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "Garden Pavilion", description: "Villas entourées de jardins tropicaux pour une intimité totale." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "Ocean Pavilion", description: "Vue mer et design contemporain, à deux pas de la plage." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "Private Pool Pavilion", description: "Piscine privée et espaces extérieurs pour un séjour en toute quiétude." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "Sri Lankan Food Tour", description: "Partez au marché local puis cuisinez les saveurs du Sri Lanka." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "UNESCO Polonnaruwa", description: "Découvrez l'ancienne capitale royale classée au patrimoine mondial." },
-      { image: "/assets/images/partenaires/sun-siyam/hotels/SSP-2.webp", title: "Minneriya Safari", description: "Vivez le spectacle des éléphants dans leur habitat naturel." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/pasikudah/1.webp", title: "Garden Pavilion", description: "Villas entourées de jardins tropicaux pour une intimité totale." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/pasikudah/2.webp", title: "Ocean Pavilion", description: "Vue mer et design contemporain, à deux pas de la plage." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/pasikudah/3.webp", title: "Private Pool Pavilion", description: "Piscine privée et espaces extérieurs pour un séjour en toute quiétude." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/pasikudah/4.webp", title: "Sri Lankan Food Tour", description: "Partez au marché local puis cuisinez les saveurs du Sri Lanka." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/pasikudah/5.webp", title: "UNESCO Polonnaruwa", description: "Découvrez l'ancienne capitale royale classée au patrimoine mondial." },
+      { image: "/assets/images/partenaires/sun-siyam/experience-sign/pasikudah/6.webp", title: "Minneriya Safari", description: "Vivez le spectacle des éléphants dans leur habitat naturel." },
     ],
     argumentAgence: {
       isQuote: true,

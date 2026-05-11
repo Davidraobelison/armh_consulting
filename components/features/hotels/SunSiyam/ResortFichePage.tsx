@@ -194,7 +194,7 @@ export default function ResortFichePage({ data }: Props) {
               Cibles à haute valeur
             </h2>
           </Reveal>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {data.cibles.map((c, i) => (
               <Reveal key={i} delay={i * 0.07}>
                 <CibleCard {...c} />
@@ -352,7 +352,7 @@ export default function ResortFichePage({ data }: Props) {
       {/* ── 8. FOOTER BAR ────────────────────────────────────────────────── */}
       <div className="bg-[#446075] backdrop-blur-sm py-5 border-t border-white/10">
         <Container>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3">
+            <div className="flex flex-col items-start sm:flex-row sm:flex-wrap sm:justify-center gap-x-8 gap-y-3">
             {data.footerBadges.map((badge, i) => (
               <div key={i} className="flex items-center gap-2 text-white text-base">
                 <span className="w-1 h-1 rounded-full bg-[#C9A96E] shrink-0" />

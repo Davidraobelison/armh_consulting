@@ -34,7 +34,7 @@ const categories: Category[] = [
       {
         slug: "sun-siyam",
         title: "Sun Siyam Resorts",
-        description: "6 resorts aux Maldives et au Sri Lanka — Luxury, Privé & Lifestyle",
+        description: "6 resorts aux Maldives et au Sri Lanka - Luxury, Privé & Lifestyle",
       },
     ],
   },

@@ -91,19 +91,19 @@ export const HOTELS: Hotel[] = [
     image: "/assets/images/partenaires/sun-siyam/hotels/SSIV-2.webp",
     tags: ["tous", "honeymoon", "luxe"],
     tagLabels: ["Romantique", "Intime"],
-    highlights: ["Toutes villas avec piscine privée", "Dine-around 24/7", "Ambiance ultra romantique"],
+    highlights: ["Toutes villas avec piscine privée", "Restaurez-vous 24h/24, 7j/7", "Ambiance ultra romantique"],
   },
   {
     id: 4,
     slug: "vilu-reef",
-    name: "Sun Siyam Vilu Reef",
+    name: "Une île romantique entre luxe  et récifs préservés", // ancien vilu reef
     collection: " Collection privée",
     collectionColor: "bg-teal-700",
     tagline: "La love story maldivienne en harmonie avec le récif.",
     image: "/assets/images/partenaires/sun-siyam/hotels/SSVR-2.webp",
     tags: ["tous", "honeymoon", "activites"],
     tagLabels: ["Récif", "Romantique"],
-    highlights: ["Récif maison exceptionnel", "Barefoot luxury", "Expériences privées"],
+    highlights: ["Récifs exceptionnels accessibles", "Luxe pieds nus dans un cadre préservé", "Expériences privées"],
   },
   {
     id: 5,

@@ -34,7 +34,7 @@ const articles = [
   {
     number: "03",
     title: "Propriété intellectuelle",
-    text: `L'ensemble du contenu présent sur le site armh-consulting.com — textes, images, graphismes, logos, icônes, vidéos et tout autre élément — est la propriété exclusive d'ARMH Consulting ou de ses partenaires, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.
+    text: `L'ensemble du contenu présent sur le site armh-consulting.com - textes, images, graphismes, logos, icônes, vidéos et tout autre élément - est la propriété exclusive d'ARMH Consulting ou de ses partenaires, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.
 
 Toute reproduction, représentation, modification, publication ou adaptation, totale ou partielle, de l'un quelconque des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable d'ARMH Consulting.
 
@@ -49,7 +49,7 @@ Les données collectées via les formulaires de contact et de partenariat du pr�
 
 Pour exercer vos droits ou pour toute question relative au traitement de vos données, vous pouvez contacter ARMH Consulting à l'adresse suivante : armh.consulting@gmail.com
 
-Vous disposez également du droit d'introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) — www.cnil.fr.`,
+Vous disposez également du droit d'introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL) - www.cnil.fr.`,
   },
   {
     number: "05",
@@ -127,7 +127,7 @@ export default function MentionsLegales() {
                     </h2>
                   </div>
 
-                  {/* Corps — tableau ou texte */}
+                  {/* Corps - tableau ou texte */}
                   <div className="px-8 py-6">
                     {"content" in article && article.content ? (
                       <div className="space-y-3">
@@ -157,7 +157,7 @@ export default function MentionsLegales() {
             {/* Date */}
             <Reveal delay={0.6}>
               <p className="text-white/30 text-sm text-center pt-4">
-                Mentions légales — ARMH Consulting · Dernière mise à jour : janvier 2025
+                Mentions légales - ARMH Consulting · Dernière mise à jour : janvier 2025
               </p>
             </Reveal>
           </div>
