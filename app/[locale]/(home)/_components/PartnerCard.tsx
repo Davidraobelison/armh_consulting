@@ -26,7 +26,9 @@ export default async function PartnerCard({
           src={logo}
           alt={name}
           fill
-          className="object-cover"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          quality={85}
+          className="object-contain p-4"
         />
       </div>
 
