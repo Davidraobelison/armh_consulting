@@ -5,13 +5,12 @@ import Container from "@/components/ui/Container";
 import ButtonCTA from "@/components/ui/ButtonCTA";
 import Link from "next/link";
 import Reveal from "@/components/ui/Reveal";
-import Image from "next/image";
 import { Building2, Layers, Globe, ShieldCheck, ArrowRightCircleIcon } from "lucide-react";
 import HotelsGrid from "@/components/features/hotels/SunSiyam/HotelsGrid";
 import ClientProfileCard from "@/components/features/hotels/SunSiyam/ClientProfileCard";
 import AudienceCard from "@/components/features/hotels/SunSiyam/AudienceCard";
 import StatBadge from "@/components/features/hotels/SunSiyam/StatBadge";
-import KitProForm from "@/components/features/hotels/SunSiyam/KitProForm";
+import KitProForm from "@/app/[locale]/partenaires/sun-siyam/kit-pro/_components/KitProForm";
 import {
   CLIENT_PROFILES,
   AUDIENCE_CARDS,
@@ -166,21 +165,21 @@ export default function SunSiyamPage() {
               <Reveal delay={0.5}>
                 <div className="flex flex-wrap gap-4">
                   <ButtonCTA href="/partenaires/sun-siyam/kit-pro" variant="primary">
-                    Demander le Kit Pro
+                    Recevoir le Kit Pro Sun Siyam
                   </ButtonCTA>
+                  <a
+                    href="/assets/documents/fiche-memo-sun-siyam.pdf"
+                    download
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-white/40 text-white text-sm font-medium hover:bg-white/10 transition-all"
+                  >
+                    Télécharger la fiche mémo Sun Siyam
+                  </a>
                   <Link
                     href="/partenaires/sun-siyam/formation"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-white/40 text-white text-sm font-medium hover:bg-white/10 transition-all"
                   >
                     Formation agences →
                   </Link>
-                  <a  href="https://www.sunsiyam.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-white/90 text-white text-base font-medium hover:bg-[#C9A96E]/10 transition-all"
-                  >
-                    Voir le site Sunsiyam.com ↗
-                  </a>
                 </div>
               </Reveal>
             </div>
@@ -458,7 +457,7 @@ export default function SunSiyamPage() {
             <Reveal delay={0.3}>
               <div className="flex justify-center pt-2">
                 <ButtonCTA href="/contact" variant="primary">
-                  Être rappelé <ArrowRightCircleIcon className="w-4 h-4 ml-2" />
+                  Être rappelé par notre équipe B2B <ArrowRightCircleIcon className="w-4 h-4 ml-2" />
                 </ButtonCTA>
               </div>
             </Reveal>

@@ -25,7 +25,7 @@ function isBotUserAgent(ua: string | null): boolean {
 export default function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
-  if (pathname.startsWith("/api/contact") || pathname.startsWith("/api/partner")) {
+  if (pathname.startsWith("/api/contact") || pathname.startsWith("/api/partner") || pathname.startsWith("/api/kit-pro")) {
     const ua = req.headers.get("user-agent");
     if (isBotUserAgent(ua)) {
       return new NextResponse(JSON.stringify({ error: "Forbidden" }), {
@@ -43,6 +43,7 @@ export const config = {
   matcher: [
     "/api/contact",
     "/api/partner",
+    "/api/kit-pro",
     "/((?!_next|.*\\..*).*)",
   ],
 };

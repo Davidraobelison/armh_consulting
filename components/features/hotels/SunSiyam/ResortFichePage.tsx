@@ -170,7 +170,7 @@ export default function ResortFichePage({ data }: Props) {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
                   </svg>
-                  Recevoir le Kit Pro
+                  Recevoir le Kit Pro Sun Siyam
                 </Link>
                 {data.ctaSecondaryLabel && (
                   <Link
@@ -372,7 +372,7 @@ export default function ResortFichePage({ data }: Props) {
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
             <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.12 1.22 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.45-.45a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
           </svg>
-          Être rappelé
+          Être rappelé par notre équipe B2B
         </Link>
         <Link
           href="#demander-fiche"
@@ -381,7 +381,7 @@ export default function ResortFichePage({ data }: Props) {
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
             <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
           </svg>
-          Kit Pro
+          Recevoir le Kit Pro Sun Siyam
         </Link>
       </div>
     </>

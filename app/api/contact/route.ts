@@ -50,29 +50,29 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { nom, entreprise, email, objet, provenance, message, website } = body;
 
-    // Honeypot — bots fill this hidden field, humans don't
+    // Honeypot - bots fill this hidden field, humans don't
     if (website) {
       return Response.json({ success: true });
     }
 
     // Server-side validation
     if (!nom || typeof nom !== "string" || nom.trim().length < 2 || nom.trim().length > 100) {
-      return Response.json({ error: "Nom invalide." }, { status: 400 });
+      return Response.json({ error: "Veuillez indiquer votre nom et prénom (2 à 100 caractères)." }, { status: 400 });
     }
     if (!entreprise || typeof entreprise !== "string" || entreprise.trim().length < 1 || entreprise.trim().length > 150) {
-      return Response.json({ error: "Entreprise invalide." }, { status: 400 });
+      return Response.json({ error: "Veuillez indiquer votre entreprise ou organisation." }, { status: 400 });
     }
     if (!email || !isValidEmail(email) || email.length > 254) {
-      return Response.json({ error: "Email invalide." }, { status: 400 });
+      return Response.json({ error: "L'adresse email saisie n'est pas valide." }, { status: 400 });
     }
     if (!objet || !ALLOWED_OBJET.includes(objet)) {
-      return Response.json({ error: "Objet invalide." }, { status: 400 });
+      return Response.json({ error: "Veuillez sélectionner un objet pour votre demande." }, { status: 400 });
     }
     if (!provenance || !ALLOWED_PROVENANCE.includes(provenance)) {
-      return Response.json({ error: "Provenance invalide." }, { status: 400 });
+      return Response.json({ error: "Veuillez indiquer comment vous avez connu ARMH Consulting." }, { status: 400 });
     }
     if (!message || typeof message !== "string" || message.trim().length < 10 || message.trim().length > 5000) {
-      return Response.json({ error: "Message trop court ou trop long." }, { status: 400 });
+      return Response.json({ error: "Votre message est trop court - merci d'indiquer votre demande (minimum 10 caractères)." }, { status: 400 });
     }
 
     const safeNom = nom.trim();

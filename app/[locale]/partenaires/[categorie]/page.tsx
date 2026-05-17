@@ -153,11 +153,11 @@ export default function BBVoyagePartnerPage() {
             <p className="text-white/70 text-lg max-w-xl mx-auto">
               Cette section est en cours de construction.
             </p>
-            <div className="pt-4">
+            {/* <div className="pt-4">
               <ButtonCTA href="/partenaires/dmc" variant="secondary">
                 Découvrir nos DMC →
               </ButtonCTA>
-            </div>
+            </div> */}
           </div>
         </Container>
       </Section>
