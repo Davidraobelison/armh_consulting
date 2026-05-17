@@ -45,7 +45,8 @@ export default function PartnerForm() {
         setFormData({ nom: "", entreprise: "", email: "", profil: "", typePartenariat: "", horizon: "", provenance: "", besoin: "", website: "" });
         setRgpd(false);
       } else {
-        setError("Une erreur est survenue. Veuillez réessayer.");
+        const data = await res.json().catch(() => ({}));
+        setError(data?.error ?? "Une erreur est survenue. Veuillez réessayer.");
       }
     } catch {
       setError("Une erreur est survenue. Veuillez réessayer.");

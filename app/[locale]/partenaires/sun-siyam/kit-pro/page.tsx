@@ -4,7 +4,7 @@ import ButtonCTA from "@/components/ui/ButtonCTA";
 import Reveal from "@/components/ui/Reveal";
 import Link from "next/link";
 import Image from "next/image";
-import KitProForm from "@/components/features/hotels/SunSiyam/KitProForm";
+import KitProForm from "./_components/KitProForm";
 import { KIT_PRO_ITEMS, WHY_ARMH } from "@/data/hotels/sun-siyam";
 import {
   LayoutGrid,
@@ -176,8 +176,15 @@ export default function KitProPage() {
               <Reveal delay={0.3}>
                 <div className="flex flex-wrap gap-4">
                   <ButtonCTA href="#recevoir-kit" variant="primary">
-                    <Download size={16} className="mr-2" /> Télécharger le kit
+                    Recevoir le Kit Pro Sun Siyam
                   </ButtonCTA>
+                  <a
+                    href="/assets/documents/fiche-memo-sun-siyam.pdf"
+                    download
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-white/40 text-white text-sm font-medium hover:bg-white/10 transition-all"
+                  >
+                    <Download size={16} className="shrink-0" /> Télécharger la fiche mémo Sun Siyam
+                  </a>
                   <Link
                     href="/partenaires/sun-siyam/formation"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-sm border border-white/40 text-white text-sm font-medium hover:bg-white/10 transition-all"
@@ -312,14 +319,14 @@ export default function KitProPage() {
           <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
             {/* LEFT – Form */}
             <div className="md:col-span-7">
-              <Reveal>
+              {/* <Reveal>
                 <h2 className="text-2xl md:text-3xl font-semibold text-white mb-1">
-                  Recevoir le Kit Pro
+                  Recevoir le Kit Pro Sun Siyam
                 </h2>
                 <p className="text-sm text-white/55 mb-6">
                   Remplissez le formulaire pour recevoir le kit immédiatement.
                 </p>
-              </Reveal>
+              </Reveal> */}
               <Reveal delay={0.1}>
                 <KitProForm />
               </Reveal>
@@ -466,10 +473,10 @@ export default function KitProPage() {
               href="/contact"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-white/30 text-white text-sm hover:bg-white/10 transition-all"
             >
-              <Phone size={14} /> Être rappelé
+              <Phone size={14} /> Être rappelé par notre équipe B2B
             </Link>
             <ButtonCTA href="#recevoir-kit" variant="primary">
-              <Download size={14} className="mr-1.5" /> Kit Pro
+              Recevoir le Kit Pro Sun Siyam
             </ButtonCTA>
           </div>
         </div>

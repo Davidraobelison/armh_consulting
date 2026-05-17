@@ -5,7 +5,7 @@ import Reveal from "@/components/ui/Reveal";
 import Link from "next/link";
 import Image from "next/image";
 import FormationForm from "@/components/features/hotels/SunSiyam/FormationForm";
-import KitProForm from "@/components/features/hotels/SunSiyam/KitProForm";
+import KitProForm from "@/app/[locale]/partenaires/sun-siyam/kit-pro/_components/KitProForm";
 import { KIT_PRO_ITEMS, WHY_ARMH, ESG_PILLARS } from "@/data/hotels/sun-siyam";
 import {
   BookOpen,
@@ -440,7 +440,7 @@ export default function FormationPage() {
             <div className="md:col-span-5 space-y-6">
               <Reveal>
                 <h2 className="text-xl md:text-2xl font-semibold text-white leading-snug">
-                  Recevoir le Kit Pro Sun Siyam en français
+                  Recevoir le Kit Pro Sun Siyam
                 </h2>
                 <p className="text-base text-white/90 mt-2 leading-relaxed">
                   Comparatifs des hôtels, profils clients, arguments de vente,
@@ -463,6 +463,15 @@ export default function FormationPage() {
                     </div>
                   ))}
                 </div>
+              </Reveal>
+              <Reveal delay={0.2}>
+                <a
+                  href="/assets/documents/fiche-memo-sun-siyam.pdf"
+                  download
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-white/40 text-white text-sm font-medium hover:bg-white/10 transition-all"
+                >
+                  Télécharger la fiche mémo Sun Siyam
+                </a>
               </Reveal>
             </div>
             <div className="md:col-span-7">
@@ -522,7 +531,7 @@ export default function FormationPage() {
               href="/contact"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-sm border border-white/30 text-white text-sm hover:bg-white/10 transition-all"
             >
-              <Phone size={14} /> Être rappelé
+              <Phone size={14} /> Être rappelé par notre équipe B2B
             </Link>
             <ButtonCTA href="#planifier" variant="primary">
               <Calendar size={14} className="mr-1.5" /> Planifier une session

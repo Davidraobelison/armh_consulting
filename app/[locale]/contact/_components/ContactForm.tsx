@@ -37,13 +37,15 @@ export default function ContactUsForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+      console.log(res)
 
       if (res.ok) {
         setSuccess(true);
         setFormData({ nom: "", entreprise: "", email: "", objet: "", provenance: "", message: "", website: "" });
         setRgpd(false);
       } else {
-        setError("Une erreur est survenue. Veuillez réessayer.");
+        const data = await res.json().catch(() => ({}));
+        setError(data?.error ?? "Une erreur est survenue. Veuillez réessayer.");
       }
     } catch {
       setError("Une erreur est survenue. Veuillez réessayer.");
