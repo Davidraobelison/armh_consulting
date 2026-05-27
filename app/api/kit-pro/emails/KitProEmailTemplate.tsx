@@ -71,7 +71,7 @@ export function KitProEmailTemplate({
       <Tailwind>
         <Body className="bg-[#eaf2fb] font-sans text-[#0d2a4a]">
           <Preview>
-            Demande Kit Pro Sun Siyam — {prenom} {nom} · {societe}
+            Demande Kit Pro Sun Siyam - {prenom} {nom} · {societe}
           </Preview>
 
           <Container className="p-5 mx-auto max-w-[600px]">
