@@ -9,6 +9,7 @@ import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import SunSiyamPage from "@/app/[locale]/partenaires/_components/SunSiyamPage";
+import { MessageCircle } from "lucide-react";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -167,6 +168,15 @@ export default function BBVoyagePartnerPage() {
 
   return (
     <>
+      {/* ── STICKY CTA ───────────────────────────────────────────────────── */}
+      <Link
+        href="/contact"
+        className="fixed bottom-6 right-4 sm:right-6 z-50 inline-flex items-center gap-2 rounded-full bg-[#1f4fd8] text-white px-5 py-3.5 sm:px-6 sm:py-4 text-sm font-semibold shadow-lg shadow-black/30 hover:bg-[#173ca6] hover:-translate-y-0.5 transition-all duration-300"
+      >
+        <MessageCircle className="w-4 h-4 shrink-0" />
+        <span>Échanger sur mon projet</span>
+      </Link>
+
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <Section
         backgroundImage="/assets/images/others/img5.webp"
