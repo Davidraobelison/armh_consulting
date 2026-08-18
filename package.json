@@ -11,8 +11,10 @@
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
+    "@next/third-parties": "^16.3.1",
     "@react-email/components": "^1.0.12",
     "@react-email/render": "^2.0.6",
+    "@t3-oss/env-nextjs": "^0.13.11",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.19",
@@ -37,7 +39,8 @@
     "resend": "^6.10.0",
     "sharp": "^0.34.5",
     "tailwind-merge": "^3.5.0",
-    "yup": "^1.7.1"
+    "yup": "^1.7.1",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

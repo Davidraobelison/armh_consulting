@@ -4,6 +4,9 @@ import "./globals.css";
 import { DM_Sans } from "next/font/google"; // ← changé
 import CookieBanner from "@/components/CookieBanner";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { env } from "@/env.mjs";
+import { GoogleAnalytics } from "@next/third-parties/google"; // ← ajout
+
 
 const dmSans = DM_Sans({ // ← renommé
   subsets: ["latin"],
@@ -46,6 +49,9 @@ export default function RootLayout({
         {children}
         <CookieBanner />
         <SpeedInsights />
+        {env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={env.NEXT_PUBLIC_GA_ID} />
+        )}
       </body>
     </html>
   );
